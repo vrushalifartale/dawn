@@ -8,6 +8,16 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Custom Link",
+    "settings": [
+      {
+        "type": "url",
+        "id": "custom_link",
+        "label": "Custom Link"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
