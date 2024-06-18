@@ -1,6 +1,43 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+ <div class="section-{{ section.id }}-padding">
+   
+ </div>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Notification",
+    "class": "Notification",
+    "disabled_on":{
+      "groups":["header","footer"]
+    },
+    "settings": [
+                {
+                 "type":"text",
+                 "id" : "title",
+                 "label": "Title",
+                 "default": "hjjhhjhj"
+                }
+               ],
+    "presets": [
+      {
+        "name":"Notification"
+      }
+    
+    ]
   }
 {% endschema %}
