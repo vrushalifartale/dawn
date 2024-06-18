@@ -2,8 +2,24 @@
   "sections": {
     "notification_bar_FhJPTE": {
       "type": "notification-bar",
+      "blocks": {
+        "heading_jUiTbE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jUiTbE"
+      ],
       "settings": {
-        "title": "hjjhhjhj"
+        "title": "hjjhhjhj",
+        "desktop_content_position": "center",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "image_banner": {
