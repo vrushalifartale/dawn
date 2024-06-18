@@ -19,25 +19,50 @@
 
 
 {% schema %}
-  {
-    "name": "Notification",
-    "class": "Notification",
-    "disabled_on":{
-      "groups":["header","footer"]
+{
+  "name": "Notification",
+  "class": "Notification",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "hjjhhjhj"
     },
-    "settings": [
-                {
-                 "type":"text",
-                 "id" : "title",
-                 "label": "Title",
-                 "default": "hjjhhjhj"
-                }
-               ],
-    "presets": [
-      {
-        "name":"Notification"
-      }
-    
-    ]
-  }
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Position"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "All colors",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Notification"
+    }
+  ]
+}
 {% endschema %}
