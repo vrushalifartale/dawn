@@ -12,10 +12,11 @@
   }
 {%- endstyle -%}
 
-
+<section id="custom-section">
  <div class="section-{{ section.id }}-padding">
-   
+   <h1>{{ section.settings.title }}</h1>
  </div>
+</section> 
 
 
 {% schema %}
@@ -60,7 +61,7 @@
     },
     {
       "type": "header",
-      "content": "sections.all.padding.section_padding_heading"
+      "content": "All padding.section_padding_heading"
     },
     {
       "type": "range",
