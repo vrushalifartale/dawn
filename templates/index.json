@@ -1,5 +1,11 @@
 {
   "sections": {
+    "notification_bar_FhJPTE": {
+      "type": "notification-bar",
+      "settings": {
+        "title": "hjjhhjhj"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -253,6 +259,7 @@
     }
   },
   "order": [
+    "notification_bar_FhJPTE",
     "image_banner",
     "rich_text",
     "featured_collection",
