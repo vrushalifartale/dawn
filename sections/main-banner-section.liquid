@@ -51,14 +51,14 @@
     "blocks": [
     {
       "type": "heading",
-      "name": "t:sections.image-banner.blocks.heading.name",
+      "name": "Heading",
       "limit": 1,
       "settings": [
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "t:sections.image-banner.blocks.heading.settings.heading.default",
-          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          "default": "default",
+          "label": "Heading"
         },
         {
           "type": "select",
@@ -66,22 +66,41 @@
           "options": [
             {
               "value": "h2",
-              "label": "t:sections.all.heading_size.options__1.label"
+              "label": "Medium"
             },
             {
               "value": "h1",
-              "label": "t:sections.all.heading_size.options__2.label"
+              "label": "Large"
             },
             {
               "value": "h0",
-              "label": "t:sections.all.heading_size.options__3.label"
+              "label": "Extralarge"
+            },
+            {
+              "value": "hxl",
+              "label": "Extra extra large"
             }
           ],
           "default": "h1",
-          "label": "t:sections.all.heading_size.label"
-        }
+          "label": "heading_size"
+        },
       ]
     },
+    { 
+        "type": "caption",
+        "name": "caption",
+        "settings": [
+          {
+          "type": "text",
+          "id": "caption",
+          "default": "caption default",
+          "label": "Caption"
+        },
+          
+        ] 
+    },     
+
+      
     {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",
