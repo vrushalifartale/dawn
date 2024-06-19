@@ -12,6 +12,14 @@
     "main_banner_section_Jj7hnw": {
       "type": "main-banner-section",
       "blocks": {
+        "caption_FNfCF3": {
+          "type": "caption",
+          "settings": {
+            "caption": "caption default",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_gXFBgN": {
           "type": "heading",
           "settings": {
@@ -32,21 +40,13 @@
             "button_link": "",
             "button_style_secondary": false
           }
-        },
-        "caption_FNfCF3": {
-          "type": "caption",
-          "settings": {
-            "caption": "caption default",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
         }
       },
       "block_order": [
+        "caption_FNfCF3",
         "heading_gXFBgN",
         "text_XU6KDz",
-        "button_6ypTLB",
-        "caption_FNfCF3"
+        "button_6ypTLB"
       ],
       "settings": {
         "image_overlay_opacity": 0
