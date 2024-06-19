@@ -30,9 +30,10 @@
   }
 }
 
-.notification.auto-rotate {
+/* .notification.auto-rotate {
     animation: rotateNotification 5s linear infinite;
   }
+ */
 
 /* @media screen and (min-width: 990px) {
   .rich-text__blocks {
