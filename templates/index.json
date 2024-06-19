@@ -32,12 +32,20 @@
           "settings": {
             "description": "<p>hghghjdf<\/p>"
           }
+        },
+        "button_UwmYb7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button 1",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "heading_jUiTbE",
         "subheading_nmFGda",
-        "text_gdwHdi"
+        "text_gdwHdi",
+        "button_UwmYb7"
       ],
       "settings": {
         "title": "hjjhhjhj",
