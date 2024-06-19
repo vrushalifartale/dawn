@@ -17,7 +17,7 @@
         "heading_r3Racn": {
           "type": "heading",
           "settings": {
-            "heading": "default",
+            "heading": "New Styles on Sale: Up to 40% Off",
             "heading_size": "h2"
           }
         }
@@ -28,6 +28,7 @@
       "settings": {
         "desktop_content_position": "center",
         "color_scheme": "",
+        "auto_rotate": false,
         "padding_top": 4,
         "padding_bottom": 0
       }
