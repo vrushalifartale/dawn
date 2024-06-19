@@ -21,12 +21,6 @@
             "heading_size": "h2"
           }
         },
-        "text_W7r4Mx": {
-          "type": "text",
-          "settings": {
-            "description": ""
-          }
-        },
         "subheading_QFC6cq": {
           "type": "subheading",
           "settings": {
@@ -38,7 +32,6 @@
       },
       "block_order": [
         "heading_r3Racn",
-        "text_W7r4Mx",
         "subheading_QFC6cq"
       ],
       "settings": {
