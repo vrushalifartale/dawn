@@ -14,10 +14,40 @@
   }
 {%- endstyle -%}
 
-<section class="">
-  
-</section>
-
+<section id="mainbanner">
+ <div class="section-{{ section.id }}">
+   <div class="mainbanner content-container section-{{ section.id }}-padding">
+     <div class="mainbanner__wrapper">
+       <div class="mainbanner__blocks">
+         
+        {% for block in section.blocks %}
+              <h2 class="heading {{ block.settings.heading_size }}">
+                {{ block.settings.heading }}
+              </h2>
+            
+              <div class="description">
+                {{ block.settings.description }}
+              </div>
+            
+              <div class="mainbanner__button">
+                {%- if block.settings.button_label != blank -%}
+                  <a
+                    {% if block.settings.button_link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link }}"
+                    {% endif %}>
+                    {{ block.settings.button_label }}
+                  </a>
+                {%- endif -%}
+              </div>
+        {% endfor %}
+         
+      </div>
+       </div>
+   </div>
+ </div>
+</section> 
 
 
 {% schema %}
