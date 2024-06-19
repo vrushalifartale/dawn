@@ -22,26 +22,31 @@
         "text_XU6KDz": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "description": "<p>description<\/p>"
           }
         },
         "button_6ypTLB": {
           "type": "button",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button": "button_label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "caption_FNfCF3": {
+          "type": "caption",
+          "settings": {
+            "caption": "caption default",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
           }
         }
       },
       "block_order": [
         "heading_gXFBgN",
         "text_XU6KDz",
-        "button_6ypTLB"
+        "button_6ypTLB",
+        "caption_FNfCF3"
       ],
       "settings": {
         "image_overlay_opacity": 0
@@ -311,19 +316,15 @@
         "text_EPAFNU": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "description": "<p>description<\/p>"
           }
         },
         "button_QWFH3M": {
           "type": "button",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button": "button_label",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
@@ -333,7 +334,6 @@
         "button_QWFH3M"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
         "image_overlay_opacity": 0
       }
     }
