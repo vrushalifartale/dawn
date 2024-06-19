@@ -26,11 +26,18 @@
             "text_style": "letter spacing",
             "text_size": "medium"
           }
+        },
+        "text_gdwHdi": {
+          "type": "text",
+          "settings": {
+            "description": "<p>hghghjdf<\/p>"
+          }
         }
       },
       "block_order": [
         "heading_jUiTbE",
-        "subheading_nmFGda"
+        "subheading_nmFGda",
+        "text_gdwHdi"
       ],
       "settings": {
         "title": "hjjhhjhj",
