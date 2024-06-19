@@ -21,18 +21,17 @@
             "heading_size": "h2"
           }
         },
-        "subheading_QFC6cq": {
-          "type": "subheading",
+        "button_Ccp6Rm": {
+          "type": "button",
           "settings": {
-            "subheading": "Shop all our new markdowns",
-            "text_style": "letter spacing",
-            "text_size": "medium"
+            "button_label": "Shop all our new markdowns",
+            "button_link": "shopify:\/\/collections\/casual"
           }
         }
       },
       "block_order": [
         "heading_r3Racn",
-        "subheading_QFC6cq"
+        "button_Ccp6Rm"
       ],
       "settings": {
         "desktop_content_position": "center",
