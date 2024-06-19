@@ -8,9 +8,9 @@
   width: calc(100% - 4rem / var(--font-body-scale));
 }
 
-.notification__blocks {
+/* .notification__blocks {
   width: 100%;
-}
+} */
 
 @media screen and (min-width: 750px) {
   .notification__wrapper {
