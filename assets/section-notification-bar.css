@@ -50,9 +50,9 @@
   margin-bottom: 0;
 }
 
-/* .notification__blocks > * + * {
+.notification__blocks > * + * {
   margin-top: 2rem;
-} */
+}
 
 .notification__blocks > * + a {
   margin-top: 3rem;
