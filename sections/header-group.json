@@ -20,10 +20,26 @@
             "heading": "New Styles on Sale: Up to 40% Off",
             "heading_size": "h2"
           }
+        },
+        "text_W7r4Mx": {
+          "type": "text",
+          "settings": {
+            "description": ""
+          }
+        },
+        "subheading_QFC6cq": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Shop all our new markdowns",
+            "text_style": "letter spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
-        "heading_r3Racn"
+        "heading_r3Racn",
+        "text_W7r4Mx",
+        "subheading_QFC6cq"
       ],
       "settings": {
         "desktop_content_position": "center",
