@@ -14,7 +14,10 @@
 
 <section id="custom-section">
  <div class="section-{{ section.id }}-padding">
-   <h1>{{ section.settings.title }}</h1>
+   <div class="rich-text content-container color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}">
+       </div>
+   </div>
  </div>
 </section> 
 
@@ -27,12 +30,6 @@
     "groups": ["footer"]
   },
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "hjjhhjhj"
-    },
     {
       "type": "select",
       "id": "desktop_content_position",
