@@ -269,10 +269,19 @@
             "image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
             "alt_text": ""
           }
+        },
+        "caption_i8YM6q": {
+          "type": "caption",
+          "settings": {
+            "caption": "caption default",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
-        "image_VM3D9F"
+        "image_VM3D9F",
+        "caption_i8YM6q"
       ],
       "settings": {
         "padding_top": 40,
