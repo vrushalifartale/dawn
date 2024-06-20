@@ -33,12 +33,19 @@
             "heading": "<strong>DONT WASTE YOUR ENERGY<\/strong>",
             "heading_size": "h1"
           }
+        },
+        "text_axEwwA": {
+          "type": "text",
+          "settings": {
+            "description": "<p>Run in Pegasus. Feel the responsive energy return of Air Zoom and all-new ReactX foam.<\/p>"
+          }
         }
       },
       "block_order": [
         "image_VM3D9F",
         "caption_i8YM6q",
-        "heading_TmbbCm"
+        "heading_TmbbCm",
+        "text_axEwwA"
       ],
       "settings": {
         "padding_top": 40,
