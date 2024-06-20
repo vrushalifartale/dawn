@@ -39,7 +39,8 @@
                     {% if block.settings.button_link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
-                      href="{{ block.settings.button_link }}"
+                      href="{{ block.settings.button_link }}" class="button button--secondary{{ block.settings.button_secondary }}"
+                  
                     {% endif %}>
                     {{ block.settings.button_label }}
                   </a>
