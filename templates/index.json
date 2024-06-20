@@ -39,13 +39,22 @@
           "settings": {
             "description": "<p>Run in Pegasus. Feel the responsive energy return of Air Zoom and all-new ReactX foam.<\/p>"
           }
+        },
+        "button_3LVNkA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
         }
       },
       "block_order": [
         "image_VM3D9F",
         "caption_i8YM6q",
         "heading_TmbbCm",
-        "text_axEwwA"
+        "text_axEwwA",
+        "button_3LVNkA"
       ],
       "settings": {
         "padding_top": 40,
