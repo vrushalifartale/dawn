@@ -22,15 +22,23 @@
         "caption_i8YM6q": {
           "type": "caption",
           "settings": {
-            "caption": "caption default",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "caption": "Nike Pegasus 41",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "heading_TmbbCm": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>DONT WASTE YOUR ENERGY<\/strong>",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
         "image_VM3D9F",
-        "caption_i8YM6q"
+        "caption_i8YM6q",
+        "heading_TmbbCm"
       ],
       "settings": {
         "padding_top": 40,
