@@ -39,7 +39,9 @@
            <p class="mainbanner__caption {{ block.settings.text_style }}--{{ block.settings.text_size }} ">
                 {{ block.settings.caption }}
            </p>
-          
+          <h2 class="heading {{ block.settings.heading_size }}">
+                {{ block.settings.heading }}
+          </h2>
 
          
        {% endfor %}
@@ -101,6 +103,43 @@
   ],
   "blocks": [
     {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "default",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Medium"
+            },
+            {
+              "value": "h1",
+              "label": "Large"
+            },
+            {
+              "value": "h0",
+              "label": "Extralarge"
+            },
+            {
+              "value": "hxl",
+              "label": "Extra extra large"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        }
+      ]
+    },
+    {
       "type": "image",
       "name": "Image",
       "settings": [
@@ -117,16 +156,16 @@
       ]
     },
     { 
-        "type": "caption",
-        "name": "Caption",
-        "settings": [
-          {
+      "type": "caption",
+      "name": "Caption",
+      "settings": [
+        {
           "type": "text",
           "id": "caption",
           "default": "caption default",
           "label": "Caption"
         },
-          {
+        {
           "type": "select",
           "id": "text_style",
           "options": [
@@ -161,10 +200,9 @@
           ],
           "default": "medium",
           "label": "Text size"
-        } 
-        ] 
-    },    
-
+        }
+      ]
+    }
   ],
   "presets": [
     {
