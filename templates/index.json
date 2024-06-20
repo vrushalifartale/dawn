@@ -38,7 +38,7 @@
           "settings": {
             "button_label": "Shop",
             "button_link": "shopify:\/\/collections\/all",
-            "button_style_secondary": true
+            "button_style_secondary": false
           }
         }
       },
