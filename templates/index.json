@@ -36,9 +36,9 @@
         "button_6ypTLB": {
           "type": "button",
           "settings": {
-            "button_label": "button_label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_label": "Shop",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": true
           }
         }
       },
