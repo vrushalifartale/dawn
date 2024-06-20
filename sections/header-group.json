@@ -41,17 +41,6 @@
         "padding_bottom": 0
       }
     },
-    "notification_bar_RdVrqp": {
-      "type": "notification-bar",
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "color_scheme": "",
-        "auto_rotate": false,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "header": {
       "type": "header",
       "settings": {
@@ -74,7 +63,6 @@
   },
   "order": [
     "notification_bar_GAXn8z",
-    "notification_bar_RdVrqp",
     "header"
   ]
 }
