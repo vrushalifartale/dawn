@@ -9,54 +9,6 @@
 */
 {
   "sections": {
-    "main_banner_section_Jj7hnw": {
-      "type": "main-banner-section",
-      "blocks": {
-        "caption_FNfCF3": {
-          "type": "caption",
-          "settings": {
-            "caption": "Nike Pegasus 41",
-            "text_style": "subtitle",
-            "text_size": "large"
-          }
-        },
-        "heading_gXFBgN": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>DON’T WASTE YOUR ENERGY<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_XU6KDz": {
-          "type": "text",
-          "settings": {
-            "description": "<p>Run in Pegasus. Feel the responsive energy return of Air Zoom and all-new ReactX foam.<\/p>"
-          }
-        },
-        "button_6ypTLB": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "caption_FNfCF3",
-        "heading_gXFBgN",
-        "text_XU6KDz",
-        "button_6ypTLB"
-      ],
-      "settings": {
-        "desktop_image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
-        "mobile_image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center"
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -308,46 +260,29 @@
         "padding_bottom": 36
       }
     },
-    "main_banner_section_BrtyQb": {
-      "type": "main-banner-section",
+    "hero_banner_section_d6MqVJ": {
+      "type": "hero-banner-section",
       "blocks": {
-        "heading_QDJzta": {
-          "type": "heading",
+        "image_VM3D9F": {
+          "type": "image",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_EPAFNU": {
-          "type": "text",
-          "settings": {
-            "description": "<p>description<\/p>"
-          }
-        },
-        "button_QWFH3M": {
-          "type": "button",
-          "settings": {
-            "button_label": "button_label",
-            "button_link": "",
-            "button_style_secondary": false
+            "image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
+            "alt_text": ""
           }
         }
       },
       "block_order": [
-        "heading_QDJzta",
-        "text_EPAFNU",
-        "button_QWFH3M"
+        "image_VM3D9F"
       ],
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center"
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "desktop_content_position": "center",
+        "color_scheme": ""
       }
     }
   },
   "order": [
-    "main_banner_section_Jj7hnw",
     "image_banner",
     "rich_text",
     "featured_collection",
@@ -355,6 +290,6 @@
     "video",
     "multicolumn",
     "collection_list_NYqYfj",
-    "main_banner_section_BrtyQb"
+    "hero_banner_section_d6MqVJ"
   ]
 }
