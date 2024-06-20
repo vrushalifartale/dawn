@@ -1,6 +1,117 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
   }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .image-block {
+    text-align: {{ section.settings.desktop_content_position }};
+  }
+
+  .image-block img {
+    max-width: 100%;
+    height: auto;
+  }
+{%- endstyle -%}
+
+<section id="custom-section">
+ <div class="section-{{ section.id }}-padding">
+   <div class="content-container color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+     <div class="blocks-wrapper --{{ section.settings.desktop_content_position }}">
+       {% for block in section.blocks %}
+         {% if block.type == 'image' %}
+           <div class="image-block">
+             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
+           </div>
+         {% endif %}
+       {% endfor %}
+     </div>
+   </div>
+ </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Section with Image",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 52
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Position"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "All colors",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero banner"
+    }
+  ]
+}
 {% endschema %}
