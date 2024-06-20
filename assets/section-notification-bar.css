@@ -54,6 +54,11 @@
   color: black;
 }
 
+.button_label{
+  color: black;
+}
+
+
 /* .notification__blocks.left .notification__buttons {
   justify-content: flex-start;
 }
