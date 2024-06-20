@@ -42,6 +42,10 @@
           <h2 class="heading {{ block.settings.heading_size }}">
                 {{ block.settings.heading }}
           </h2>
+          <div class="description">
+                {{ block.settings.description }}
+          </div>
+            
 
          
        {% endfor %}
@@ -202,7 +206,20 @@
           "label": "Text size"
         }
       ]
-    }
+    },
+    {
+      "type": "text",
+      "name": "Description",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "default": "<p>description</p>",
+          "label": "Description"
+        }
+      ]
+    },
   ],
   "presets": [
     {
