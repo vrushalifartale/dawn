@@ -64,10 +64,10 @@
   word-break: break-word;
 }
 
-.rich-text__blocks.left .rich-text__buttons {
+.notification__blocks.left .notification__buttons {
   justify-content: flex-start;
 }
 
-.rich-text__blocks.right .rich-text__buttons {
+.notification__blocks.right .notification__buttons {
   justify-content: flex-end;
 }
