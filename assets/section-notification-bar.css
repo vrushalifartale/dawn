@@ -13,18 +13,10 @@
 } */
 
 @media screen and (min-width: 750px) {
-  .notification__wrapper {
+  /* .notification__wrapper {
     width: 100%;
   }
-
-  .notification__wrapper--left {
-    justify-content: flex-start;
-  }
-
-  .notification__wrapper--right {
-    justify-content: flex-end;
-  }
-
+ */
   .notification__blocks {
     max-width: 50rem;
   }
@@ -57,10 +49,3 @@
     color: black;
   }
 
-/* .notification__blocks.left .notification__buttons {
-  justify-content: flex-start;
-}
-
-.notification__blocks.right .notification__buttons {
-  justify-content: flex-end;
-} */
