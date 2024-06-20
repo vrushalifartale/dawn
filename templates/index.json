@@ -15,9 +15,9 @@
         "caption_FNfCF3": {
           "type": "caption",
           "settings": {
-            "caption": "caption default",
+            "caption": "Nike Pegasus 41",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "text_size": "large"
           }
         },
         "heading_gXFBgN": {
@@ -36,7 +36,7 @@
         "button_6ypTLB": {
           "type": "button",
           "settings": {
-            "button": "button_label",
+            "button_label": "button_label",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -323,7 +323,7 @@
         "button_QWFH3M": {
           "type": "button",
           "settings": {
-            "button": "button_label",
+            "button_label": "button_label",
             "button_link": "",
             "button_style_secondary": false
           }
