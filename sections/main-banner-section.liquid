@@ -21,9 +21,9 @@
        <div class="mainbanner__blocks">
          
         {% for block in section.blocks %}
-              <div class="caption">
+              <p class="class= mainbanner__caption {{ block.settings.text_style }}--{{ block.settings.text_size }} ">
                 {{ block.settings.caption }}
-              </div>
+              </p>
             
               <h2 class="heading {{ block.settings.heading_size }}">
                 {{ block.settings.heading }}
