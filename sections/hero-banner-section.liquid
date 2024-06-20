@@ -32,6 +32,12 @@
              <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
            </div>
          {% endif %}
+           <p class="mainbanner__caption {{ block.settings.text_style }}--{{ block.settings.text_size }} ">
+                {{ block.settings.caption }}
+           </p>
+          
+
+         
        {% endfor %}
      </div>
    </div>
@@ -105,7 +111,56 @@
           "label": "Alt Text"
         }
       ]
-    }
+    },
+    { 
+        "type": "caption",
+        "name": "Caption",
+        "settings": [
+          {
+          "type": "text",
+          "id": "caption",
+          "default": "caption default",
+          "label": "Caption"
+        },
+          {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "subtitle",
+              "label": "Subtitle"
+            },
+            {
+              "value": "caption-with-letter-spacing",
+              "label": "Letter spacing"
+            }
+          ],
+          "default": "caption-with-letter-spacing",
+          "label": "Letter spacing"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "medium",
+          "label": "Text size"
+        } 
+        ] 
+    },    
+
   ],
   "presets": [
     {
