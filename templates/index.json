@@ -9,6 +9,36 @@
 */
 {
   "sections": {
+    "hero_banner_section_d6MqVJ": {
+      "type": "hero-banner-section",
+      "blocks": {
+        "image_VM3D9F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
+            "alt_text": ""
+          }
+        },
+        "caption_i8YM6q": {
+          "type": "caption",
+          "settings": {
+            "caption": "caption default",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "image_VM3D9F",
+        "caption_i8YM6q"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "desktop_content_position": "center",
+        "color_scheme": ""
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -259,46 +289,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "hero_banner_section_d6MqVJ": {
-      "type": "hero-banner-section",
-      "blocks": {
-        "image_VM3D9F": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
-            "alt_text": ""
-          }
-        },
-        "caption_i8YM6q": {
-          "type": "caption",
-          "settings": {
-            "caption": "caption default",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "image_VM3D9F",
-        "caption_i8YM6q"
-      ],
-      "settings": {
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "desktop_content_position": "center",
-        "color_scheme": ""
-      }
     }
   },
   "order": [
+    "hero_banner_section_d6MqVJ",
     "image_banner",
     "rich_text",
     "featured_collection",
     "collage",
     "video",
     "multicolumn",
-    "collection_list_NYqYfj",
-    "hero_banner_section_d6MqVJ"
+    "collection_list_NYqYfj"
   ]
 }
