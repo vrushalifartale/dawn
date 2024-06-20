@@ -9,6 +9,48 @@
 */
 {
   "sections": {
+    "rich_text_EjAxFH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_f8nJwd": {
+          "type": "heading",
+          "settings": {
+            "heading": "New Styles on Sale: Up to 40% Off",
+            "heading_size": "h1"
+          }
+        },
+        "text_G4CYKf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Featuring a classic style, once you wear them on you’ll experience a whole new level of comfort.<\/p>"
+          }
+        },
+        "button_hYn7Lg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_f8nJwd",
+        "text_G4CYKf",
+        "button_hYn7Lg"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -197,6 +239,7 @@
     }
   },
   "order": [
+    "rich_text_EjAxFH",
     "main",
     "multicolumn",
     "related-products"
