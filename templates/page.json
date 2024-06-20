@@ -36,8 +36,8 @@
         "button_jBqcRY": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Shop",
+            "button_link": "shopify:\/\/collections\/casual",
             "button_style_secondary": false
           }
         }
