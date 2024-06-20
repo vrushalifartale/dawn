@@ -21,10 +21,12 @@
    <div class="mainbanner content banner__content--{{ section.settings.desktop_content_position }}container section-{{ section.id }}-padding">
      <div class="mainbanner__wrapper mainbanner__wrapper--{{ section.settings.desktop_content_position }}">
        <div class="mainbanner__blocks">
-
+          {% if section.settings.desktop_image != blank %}
          <img class="desktop" src="{{ section.settings.desktop_image | image_url: width: 1500 }}">
+         {% endif %}
+          {% if section.settings.mobile_image != blank %}
          <img class="mobile" src="{{ section.settings.mobile_image | image_url: width: 1500 }}">
-         
+         {% endif %}
         {% for block in section.blocks %}
           
               <p class="mainbanner__caption {{ block.settings.text_style }}--{{ block.settings.text_size }} ">
