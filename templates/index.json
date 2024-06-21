@@ -16,7 +16,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
-            "alt_text": ""
+            "alt_text": "",
+            "image_link": "shopify:\/\/products\/long-sleeve-t-shirt"
           }
         },
         "caption_i8YM6q": {
