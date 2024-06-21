@@ -7,11 +7,12 @@
   <li>
     <details>
       <summary>
-        <h3>
+        {{ block.settings.logo | image_url: width:40, height:40 | image_tag: class: 'logo' }}
+        <h3>{{ block.settings.text_title }}</h3>
           <span class="plus-ico">{% render 'plus-icon.liquid' %} </span>
           <span class="minus-ico">{% render 'minus-icon.liquid' %} </span>
-        </h3>
       </summary>
+      {{ block.settings.text_content }}
     </details>
   </li> 
     {% endfor %}
