@@ -85,7 +85,7 @@
                     {% if block.settings.button_link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
-                      href="{{ block.settings.button_link }}" class="button button--secondary{{ block.settings.button_style_secondary }}"
+                      href="{{ block.settings.button_link }}" class="button button--secondary{{ block.settings.button_style }}"
                   
                     {% endif %}>
                     {{ block.settings.button_label }}
@@ -290,10 +290,20 @@
           "label": "Button_link"
         },
         {
-          "type": "checkbox",
-          "id": "button_style_secondary",
-          "default": true,
-          "label": "Button style"
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "options": [
+                      {
+                        "value": "button--primary",
+                        "label": "Primary"
+                      },
+                      {
+                        "value": "button--secondary",
+                        "label": "Secondary"
+                      }
+                    ],
+            "default": "button--primary"
         }
       ]
     }
