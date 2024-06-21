@@ -25,8 +25,98 @@
 
 
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Innovation",
+  "class": "innovation",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 52
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Position"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "innovation_block",
+      "name": "Innovation Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        },
+        {
+          "type": "text",
+          "id": "text_title",
+          "label": "Title",
+          "default": "Default Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text_content",
+          "label": "Content",
+          "default": "Default content goes here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default Innovation",
+      "category": "Custom",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52
+      },
+      "blocks": [
+        {
+          "type": "innovation_block",
+          "settings": {
+            "logo": "",
+            "text_title": "Example Title",
+            "text_content": "This is an example content block."
+          }
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
