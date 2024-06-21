@@ -46,6 +46,22 @@
     padding-bottom: 0; /* Remove bottom padding for last element */
   }
 
+  /* Black button styles */
+.button--black {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button--black:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+
 {%- endstyle -%}
 
 <section id="custom-section">
@@ -75,7 +91,7 @@
                     {% if block.settings.button_link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
-                      href="{{ block.settings.button_link }}" class="button {{ block.settings.button_style }}"
+                      href="{{ block.settings.button_link }}" class="button--black {{ block.settings.button_style }}"
                   
                     {% endif %}>
                     {{ block.settings.button_label }}
