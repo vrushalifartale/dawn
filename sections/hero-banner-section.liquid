@@ -36,7 +36,6 @@
   .blocks-wrapper .mainbanner__button {
     margin: 0; /* Remove default margin */
     padding: 0px 0; /* Add padding for consistent spacing */
-    color: black;
   }
 
   .blocks-wrapper .mainbanner__caption {
@@ -45,6 +44,17 @@
 
   .blocks-wrapper .mainbanner__button {
     padding-bottom: 0; /* Remove bottom padding for last element */
+  }
+
+  .button--black {
+    background-color: black;
+    color: white; /* Adjust the text color as needed */
+    border: 1px solid black; /* Adjust the border if needed */
+  }
+
+  .button--black:hover {
+    background-color: #333; /* A slightly lighter shade for hover effect */
+    border-color: #333;
   }
 {%- endstyle -%}
 
