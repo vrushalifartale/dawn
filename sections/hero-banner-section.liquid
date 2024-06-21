@@ -16,13 +16,34 @@
     text-align: {{ section.settings.desktop_content_position }};
   }
 
-  .image-block img {
+  /* .image-block img {
+    max-width: 100%;
+    height: auto;
+  }
+ */
+  .blocks-wrapper {
+    text-align: center;
+  }
+
+  .blocks-wrapper .image-block img {
     max-width: 100%;
     height: auto;
   }
 
-  .blocks-wrapper {
-    text-align: center;
+  .blocks-wrapper .mainbanner__caption,
+  .blocks-wrapper .heading,
+  .blocks-wrapper .description,
+  .blocks-wrapper .mainbanner__button {
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Add padding for consistent spacing */
+  }
+
+  .blocks-wrapper .mainbanner__caption {
+    padding-top: 0; /* Remove top padding for first element */
+  }
+
+  .blocks-wrapper .mainbanner__button {
+    padding-bottom: 0; /* Remove bottom padding for last element */
   }
 {%- endstyle -%}
 
