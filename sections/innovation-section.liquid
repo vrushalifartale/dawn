@@ -52,10 +52,10 @@
 
 
 
-<div class="innovation-wrapper">
+<div class="innovation-wrapper {{ section.settings.desktop_content_position }}">
   <ul class="innovation-list ">
     {% for block in section.blocks %}
-      <li class="innovation-item {{ section.settings.desktop_content_position }}">
+      <li class="innovation-item">
         <details>
           <summary class="innovation-summary">
             {{ block.settings.logo | image_url: width:40, height:40 | image_tag: class: 'logo' }}
