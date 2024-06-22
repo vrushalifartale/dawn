@@ -318,16 +318,17 @@
     "innovation_section_jdnTpx": {
       "type": "innovation-section",
       "blocks": {
-        "innovation_block_KbHb6C": {
+        "innovation_block_3KWNGk": {
           "type": "innovation_block",
           "settings": {
-            "text_title": "Example Title",
-            "text_content": "This is an example content block."
+            "logo": "shopify:\/\/shop_images\/Diamond.svg",
+            "text_title": "Default Title",
+            "text_content": "Default content goes here."
           }
         }
       },
       "block_order": [
-        "innovation_block_KbHb6C"
+        "innovation_block_3KWNGk"
       ],
       "settings": {
         "padding_top": 40,
