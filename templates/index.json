@@ -325,10 +325,19 @@
             "text_title": "Our comfort formula",
             "text_content": "The Atoms Eternal™ sole is supportive, durable, and lightweight, thanks to our signature cutout design. It is made using our custom TPV compound with a compressed molded midsole that provides grip and flexibility while keeping your feet comfortable throughout the day."
           }
+        },
+        "innovation_block_8VxUMf": {
+          "type": "innovation_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Diamond.svg",
+            "text_title": "Our premium materials",
+            "text_content": "The Model 001 is designed to be the only shoe you reach for at whatever time you want to wear shoes. With premium materials, unparalleled breathability, and a pared down look that can be dressed up or down effortlessly, once you wear them you’ll only ask “why” — as in, “why did I wear anything else?”"
+          }
         }
       },
       "block_order": [
-        "innovation_block_3KWNGk"
+        "innovation_block_3KWNGk",
+        "innovation_block_8VxUMf"
       ],
       "settings": {
         "padding_top": 40,
