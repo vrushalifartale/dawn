@@ -53,9 +53,9 @@
 
 
 <div class="innovation-wrapper">
-  <ul class="innovation-list {{ section.settings.desktop_content_position }}">
+  <ul class="innovation-list ">
     {% for block in section.blocks %}
-      <li class="innovation-item">
+      <li class="innovation-item {{ section.settings.desktop_content_position }}">
         <details>
           <summary class="innovation-summary">
             {{ block.settings.logo | image_url: width:40, height:40 | image_tag: class: 'logo' }}
