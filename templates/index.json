@@ -82,15 +82,25 @@
             "text_title": "Our premium materials",
             "text_content": "The Model 001 is designed to be the only shoe you reach for at whatever time you want to wear shoes. With premium materials, unparalleled breathability, and a pared down look that can be dressed up or down effortlessly, once you wear them you’ll only ask “why” — as in, “why did I wear anything else?”"
           }
+        },
+        "innovation_block_Dkjbrc": {
+          "type": "innovation_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Eco_Friendly.svg",
+            "text_title": "Default Title",
+            "text_content": "Default content goes here."
+          }
         }
       },
       "block_order": [
         "innovation_block_3KWNGk",
-        "innovation_block_8VxUMf"
+        "innovation_block_8VxUMf",
+        "innovation_block_Dkjbrc"
       ],
       "settings": {
         "padding_top": 44,
         "padding_bottom": 52,
+        "color_scheme": "",
         "desktop_content_position": "center"
       }
     },
