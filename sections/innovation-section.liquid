@@ -10,25 +10,66 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+.innovation-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust the gap between items as needed */
+}
+
+.innovation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.innovation-item {
+  flex: 1 1 calc(50% - 16px); /* Adjust the width of the items and the gap between them */
+  box-sizing: border-box;
+  margin-bottom: 16px; /* Adjust the bottom margin as needed */
+}
+
+.innovation-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 8px; /* Adjust the space between the logo and the text */
+}
+
+.innovation-content {
+  padding: 8px 0; /* Adjust the padding for the content as needed */
+}
+
+.plus-ico, .minus-ico {
+  margin-left: 8px; /* Adjust the space between icons and text */
+}
+
 {%- endstyle -%}
 
 
-<div class= "innovation-wrapper">
-<ul> 
-  {% for block in section.blocks %}
-  <li>
-    <details>
-      <summary>
-        {{ block.settings.logo | image_url: width:40, height:40 | image_tag: class: 'logo' }}
-        <h3>{{ block.settings.text_title }}</h3>
-          <span class="plus-ico">{% render 'plus-icon.liquid' %} </span>
-          <span class="minus-ico">{% render 'minus-icon.liquid' %} </span>
-      </summary>
-      {{ block.settings.text_content }}
-    </details>
-  </li> 
+
+<div class="innovation-wrapper">
+  <ul class="innovation-list">
+    {% for block in section.blocks %}
+      <li class="innovation-item">
+        <details>
+          <summary class="innovation-summary">
+            {{ block.settings.logo | image_url: width:40, height:40 | image_tag: class: 'logo' }}
+            <h3>{{ block.settings.text_title }}</h3>
+            <span class="plus-ico">{% render 'plus-icon' %}</span>
+            <span class="minus-ico">{% render 'minus-icon' %}</span>
+          </summary>
+          <div class="innovation-content">
+            {{ block.settings.text_content }}
+          </div>
+        </details>
+      </li>
     {% endfor %}
-</ul>  
+  </ul>
 </div>
 
 
