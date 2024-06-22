@@ -12,7 +12,9 @@
   }
 .innovation-wrapper {
   display: flex;
-  justify-content: center; /* Centering the content by default */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the start (left) */
+  gap: 1rem; /* Adjust gap between items, using 1rem as an example */
   padding: 0 16px; /* Adjust the padding as needed */
 }
 
@@ -69,7 +71,7 @@ details:not([open]) .plus-ico {
 
 
 
-<div class="innovation-wrapper section-{{ section.id }}{{ section.settings.desktop_content_position }}">
+<div class="innovation-wrapper section-{{ section.id }} flex items-center justify-start gap-3 {{ section.settings.desktop_content_position }}">
   <ul class="innovation-list ">
     {% for block in section.blocks %}
       <li class="innovation-item">
