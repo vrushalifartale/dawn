@@ -64,6 +64,36 @@
         "color_scheme": ""
       }
     },
+    "innovation_section_jdnTpx": {
+      "type": "innovation-section",
+      "blocks": {
+        "innovation_block_3KWNGk": {
+          "type": "innovation_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Comfort.svg",
+            "text_title": "Our comfort formula",
+            "text_content": "The Atoms Eternal™ sole is supportive, durable, and lightweight, thanks to our signature cutout design. It is made using our custom TPV compound with a compressed molded midsole that provides grip and flexibility while keeping your feet comfortable throughout the day."
+          }
+        },
+        "innovation_block_8VxUMf": {
+          "type": "innovation_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Diamond.svg",
+            "text_title": "Our premium materials",
+            "text_content": "The Model 001 is designed to be the only shoe you reach for at whatever time you want to wear shoes. With premium materials, unparalleled breathability, and a pared down look that can be dressed up or down effortlessly, once you wear them you’ll only ask “why” — as in, “why did I wear anything else?”"
+          }
+        }
+      },
+      "block_order": [
+        "innovation_block_3KWNGk",
+        "innovation_block_8VxUMf"
+      ],
+      "settings": {
+        "padding_top": 44,
+        "padding_bottom": 52,
+        "desktop_content_position": "center"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -314,47 +344,17 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "innovation_section_jdnTpx": {
-      "type": "innovation-section",
-      "blocks": {
-        "innovation_block_3KWNGk": {
-          "type": "innovation_block",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Comfort.svg",
-            "text_title": "Our comfort formula",
-            "text_content": "The Atoms Eternal™ sole is supportive, durable, and lightweight, thanks to our signature cutout design. It is made using our custom TPV compound with a compressed molded midsole that provides grip and flexibility while keeping your feet comfortable throughout the day."
-          }
-        },
-        "innovation_block_8VxUMf": {
-          "type": "innovation_block",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Diamond.svg",
-            "text_title": "Our premium materials",
-            "text_content": "The Model 001 is designed to be the only shoe you reach for at whatever time you want to wear shoes. With premium materials, unparalleled breathability, and a pared down look that can be dressed up or down effortlessly, once you wear them you’ll only ask “why” — as in, “why did I wear anything else?”"
-          }
-        }
-      },
-      "block_order": [
-        "innovation_block_3KWNGk",
-        "innovation_block_8VxUMf"
-      ],
-      "settings": {
-        "padding_top": 44,
-        "padding_bottom": 52,
-        "desktop_content_position": "center"
-      }
     }
   },
   "order": [
     "hero_banner_section_d6MqVJ",
+    "innovation_section_jdnTpx",
     "image_banner",
     "rich_text",
     "featured_collection",
     "collage",
     "video",
     "multicolumn",
-    "collection_list_NYqYfj",
-    "innovation_section_jdnTpx"
+    "collection_list_NYqYfj"
   ]
 }
