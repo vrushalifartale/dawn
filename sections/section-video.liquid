@@ -1,17 +1,17 @@
 {% style %}
+.section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
+}
+
+@media screen and (min-width: 750px) {
   .section-{{ section.id }}-padding {
-    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-    padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+}
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-
-  /* General styling */
+/* General styling */
 .video-wrapper {
   display: flex;
   justify-content: center; /* Default to center */
@@ -21,17 +21,10 @@
 
 .video-container {
   max-width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.video-container .heading{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-  
-  
 
 .video-block video {
   width: 100%;
@@ -52,40 +45,40 @@
 .section-right .video-wrapper {
   justify-content: flex-end;
 }
+{% endstyle %}
 
-  
-{% endstyle %}  
-
-<section id="video-section">
+<section id="video-section" class="section-{{ section.id }}-padding">
   <div class="video-wrapper section-{{ section.id }} {{ section.settings.desktop_content_position }}">
-   <div class="video-container">
-         {% for block in section.blocks %}
-
+    <div class="video-container">
+      {% for block in section.blocks %}
+        {% if block.type == 'heading' %}
           <h2 class="heading {{ block.settings.heading_size }}">
-                {{ block.settings.heading }}
+            {{ block.settings.heading }}
           </h2>
-
-         {% if block.type == 'video' %}
-           <div class="video-block">
-             <video controls>
-             <source src="{{ block.settings.video }}" type="video/mp4">
-               Your browser does not support the video tag.
-          </video>
-           </div>
-         {% endif %}
-       {% endfor %}
-     </div>
-   </div>
+        {% endif %}
+        {% if block.type == 'image' %}
+          <div class="image-block">
+            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
+          </div>
+        {% endif %}
+        {% if block.type == 'video' %}
+          <div class="video-block">
+            <video controls>
+              <source src="{{ block.settings.video_url }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
-
-
-
 {% schema %}
-  {
-    "name": "Videosection",
-    "settings": [
-      {
+{
+  "name": "Video Section",
+  "settings": [
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -95,7 +88,7 @@
       "label": "Top padding",
       "default": 40
     },
-      {
+    {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
@@ -105,7 +98,7 @@
       "label": "Bottom padding",
       "default": 52
     },
-      {
+    {
       "type": "select",
       "id": "desktop_content_position",
       "options": [
@@ -125,23 +118,22 @@
       "default": "center",
       "label": "Position"
     },
-      {
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "All colors",
       "default": "scheme-1"
-    },    
-    ],
-    "blocks": [
-      {
-        "type": "heading",
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
       "name": "Heading",
-      "limit": 3,
       "settings": [
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "default",
+          "default": "Default Heading",
           "label": "Heading"
         },
         {
@@ -169,24 +161,63 @@
           "label": "Heading size"
         }
       ]
-      },
-      {    
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text"
+        }
+      ]
+    },
+    {
       "type": "video",
       "name": "Video",
       "settings": [
         {
-          "type": "video",
-          "id": "video",
-          "label": "A Shopify-hosted video"
-        },
+          "type": "url",
+          "id": "video_url",
+          "label": "Video URL",
+          "default": "/collections/all"
+        }
       ]
-    },     
-    ],
-     "presets":[
-       {
-       "name": "Videosection"
-       }
-     ]
-  }
-  
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Section",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "heading",
+          "settings": {
+            "heading": "Sample Heading",
+            "heading_size": "h1"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "alt_text": "Sample Image"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=rppKgzoAkQc"
+          }
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
