@@ -44,8 +44,24 @@
   padding: 8px 0; /* Adjust the padding for the content as needed */
 }
 
-.plus-ico, .minus-ico {
-  margin-left: 8px; /* Adjust the space between icons and text */
+.toggle-icon {
+  display: none;
+}
+
+details[open] .plus-ico {
+  display: none;
+}
+
+details:not([open]) .minus-ico {
+  display: none;
+}
+
+details[open] .minus-ico {
+  display: inline;
+}
+
+details:not([open]) .plus-ico {
+  display: inline;
 }
 
 {%- endstyle -%}
