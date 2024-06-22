@@ -87,7 +87,31 @@
           "type": "innovation_block",
           "settings": {
             "logo": "shopify:\/\/shop_images\/Eco_Friendly.svg",
-            "text_title": "Default Title",
+            "text_title": "Eco friendly",
+            "text_content": "Default content goes here."
+          }
+        },
+        "innovation_block_TJcnNH": {
+          "type": "innovation_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Fresh.svg",
+            "text_title": "No bad odors",
+            "text_content": "Default content goes here."
+          }
+        },
+        "innovation_block_AbLjqT": {
+          "type": "innovation_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Magic.svg",
+            "text_title": "Sleep On\/Off easy",
+            "text_content": "Default content goes here."
+          }
+        },
+        "innovation_block_CyJ9UM": {
+          "type": "innovation_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Machine_Wash.svg",
+            "text_title": "Easy to clean",
             "text_content": "Default content goes here."
           }
         }
@@ -95,7 +119,10 @@
       "block_order": [
         "innovation_block_3KWNGk",
         "innovation_block_8VxUMf",
-        "innovation_block_Dkjbrc"
+        "innovation_block_Dkjbrc",
+        "innovation_block_TJcnNH",
+        "innovation_block_AbLjqT",
+        "innovation_block_CyJ9UM"
       ],
       "settings": {
         "padding_top": 44,
