@@ -123,7 +123,59 @@
       "id": "color_scheme",
       "label": "All colors",
       "default": "scheme-1"
-    }
+    },    
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+      "name": "Heading",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "default",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Medium"
+            },
+            {
+              "value": "h1",
+              "label": "Large"
+            },
+            {
+              "value": "h0",
+              "label": "Extralarge"
+            },
+            {
+              "value": "hxl",
+              "label": "Extra extra large"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        }
+      ]
+      },
+      {    
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "label": "Upload video",
+          "accept": ["youtube", "vimeo"],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+         },
+      ]
+    },     
     ],
      "presets":[
        {
