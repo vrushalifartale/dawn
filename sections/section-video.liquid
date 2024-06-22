@@ -58,10 +58,10 @@
                 {{ block.settings.heading }}
           </h2>
 
-         {% if block.type == 'video_url' %}
+         {% if block.type == 'video' %}
            <div class="video-block">
              <video controls>
-             <source src="{{ block.settings.video_url }}" type="video/mp4">
+             <source src="{{ block.settings.video }}" type="video/mp4">
                Your browser does not support the video tag.
           </video>
            </div>
@@ -172,13 +172,6 @@
           "id": "video",
           "label": "A Shopify-hosted video"
         },
-        {
-          "type": "video_url",
-          "id": "video_url",
-          "label": "Upload video",
-          "accept": ["youtube", "vimeo"]
-      
-         },
       ]
     },     
     ],
