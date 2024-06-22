@@ -57,7 +57,7 @@
     {% for block in section.blocks %}
       <li class="innovation-item">
         <details>
-          <summary class="innovation-summary">
+          <summary class="innovation-summary {{ settings.desktop_content_position }}">
             {{ block.settings.logo | image_url: width:40, height:40 | image_tag: class: 'logo' }}
             <h3>{{ block.settings.text_title }}</h3>
             <span class="plus-ico">{% render 'plus-icon' %}</span>
