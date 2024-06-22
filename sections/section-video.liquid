@@ -10,6 +10,42 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  /* General styling */
+.video-wrapper {
+  display: flex;
+  justify-content: center; /* Default to center */
+  padding: 16px;
+  width: 100%;
+}
+
+.video-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-block video {
+  width: 100%;
+  height: auto;
+}
+
+/* Center alignment */
+.section-center .video-wrapper {
+  justify-content: center;
+}
+
+/* Left alignment */
+.section-left .video-wrapper {
+  justify-content: flex-start;
+}
+
+/* Right alignment */
+.section-right .video-wrapper {
+  justify-content: flex-end;
+}
+
   
 {% endstyle %}  
 
