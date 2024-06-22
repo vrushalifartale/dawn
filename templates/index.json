@@ -381,6 +381,34 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "section_video_7kiDGA": {
+      "type": "section-video",
+      "blocks": {
+        "heading_M9BHFq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Innovation that created magical comfort<\/strong>",
+            "heading_size": "hxl"
+          }
+        },
+        "video_9dJK8K": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "heading_M9BHFq",
+        "video_9dJK8K"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "desktop_content_position": "center",
+        "color_scheme": ""
+      }
     }
   },
   "order": [
@@ -392,6 +420,7 @@
     "collage",
     "video",
     "multicolumn",
-    "collection_list_NYqYfj"
+    "collection_list_NYqYfj",
+    "section_video_7kiDGA"
   ]
 }
