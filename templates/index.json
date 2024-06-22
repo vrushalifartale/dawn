@@ -46,7 +46,7 @@
           "settings": {
             "button_label": "Shop",
             "button_link": "shopify:\/\/collections\/all",
-            "button_style_secondary": false
+            "button_style": "button--secondary"
           }
         }
       },
@@ -314,6 +314,26 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "innovation_section_jdnTpx": {
+      "type": "innovation-section",
+      "blocks": {
+        "innovation_block_KbHb6C": {
+          "type": "innovation_block",
+          "settings": {
+            "text_title": "Example Title",
+            "text_content": "This is an example content block."
+          }
+        }
+      },
+      "block_order": [
+        "innovation_block_KbHb6C"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "desktop_content_position": "center"
+      }
     }
   },
   "order": [
@@ -324,6 +344,7 @@
     "collage",
     "video",
     "multicolumn",
-    "collection_list_NYqYfj"
+    "collection_list_NYqYfj",
+    "innovation_section_jdnTpx"
   ]
 }
