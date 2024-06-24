@@ -66,8 +66,7 @@
         {% if block.type == 'video' %}
           <div class="video-block">
             <video controls>
-              {{ block.settings.video }}
-              {{ media | video_tag: autoplay: true, loop: true, muted: true, controls: true }}
+              {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: true }}
               Your browser does not support the video tag.
             </video>
           </div>
