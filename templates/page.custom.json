@@ -19,23 +19,15 @@
     },
     "b2b_banner_section_JYT7x3": {
       "type": "b2b-banner-section",
-      "blocks": {
-        "image_3khcck": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
-            "alt_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_3khcck"
-      ],
       "settings": {
+        "banner_image": "shopify:\/\/shop_images\/nike-just-do-it_copy.webp",
         "padding_top": 40,
         "padding_bottom": 52,
         "desktop_content_position": "center",
-        "color_scheme": ""
+        "color_scheme": "",
+        "text_align": "center",
+        "heading": "B2B Partnership Portal",
+        "heading_size": "h1"
       }
     }
   },
