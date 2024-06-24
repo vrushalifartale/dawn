@@ -57,19 +57,9 @@
           </h2>
         {% endif %}
         </div>
-        <div class="">
-        {% if block.type == 'image' %}
-          <div class="image-block">
-            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
-          </div>
-        {% endif %}
+        <div class="video-block">
         {% if block.type == 'video' %}
-          <div class="video-block">
-            <video controls>
               {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: true }}
-              Your browser does not support the video tag.
-            </video>
-          </div>
         {% endif %}  
     </div>
   </div>
@@ -165,22 +155,6 @@
       ]
     },
     {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Upload Image"
-        },
-        {
-          "type": "text",
-          "id": "alt_text",
-          "label": "Alt Text"
-        }
-      ]
-    },
-    {
       "type": "video",
       "name": "Video",
       "settings": [
@@ -202,13 +176,6 @@
           "settings": {
             "heading": "Sample Heading",
             "heading_size": "h1"
-          }
-        },
-        {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "alt_text": "Sample Image"
           }
         },
       ]
