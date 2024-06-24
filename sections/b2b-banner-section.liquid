@@ -31,19 +31,6 @@
           <div class="description">
                 {{ block.settings.description }}
           </div>
-          <div class="mainbanner__button">
-                {%- if block.settings.button_label != blank -%}
-                  <a
-                    {% if block.settings.button_link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.button_link }}" class="button--black {{ block.settings.button_style }}"
-                  
-                    {% endif %}>
-                    {{ block.settings.button_label }}
-                  </a>
-                {%- endif -%}
-          </div>
        {% endfor %}
 </div>
 </section>
