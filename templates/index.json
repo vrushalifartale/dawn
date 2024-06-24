@@ -157,6 +157,13 @@
             "text_title": "Default Title",
             "text_content": "Default content goes here."
           }
+        },
+        "innovation_block_WH3MNK": {
+          "type": "innovation_block",
+          "settings": {
+            "text_title": "Default Title",
+            "text_content": "Default content goes here."
+          }
         }
       },
       "block_order": [
@@ -167,7 +174,8 @@
         "innovation_block_AbLjqT",
         "innovation_block_CyJ9UM",
         "innovation_block_rpPbm4",
-        "innovation_block_tVVUdc"
+        "innovation_block_tVVUdc",
+        "innovation_block_WH3MNK"
       ],
       "settings": {
         "padding_top": 44,
