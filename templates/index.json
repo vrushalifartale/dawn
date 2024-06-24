@@ -142,6 +142,21 @@
             "text_title": "Easy to clean",
             "text_content": "The Atoms Eternal™ sole is supportive, durable, and lightweight, thanks to our signature cutout design. It is made using our custom TPV compound with a compressed molded midsole that provides grip and flexibility while keeping your feet comfortable throughout the day."
           }
+        },
+        "innovation_block_rpPbm4": {
+          "type": "innovation_block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Machine_Wash.svg",
+            "text_title": "Default Title",
+            "text_content": "Default content goes here."
+          }
+        },
+        "innovation_block_tVVUdc": {
+          "type": "innovation_block",
+          "settings": {
+            "text_title": "Default Title",
+            "text_content": "Default content goes here."
+          }
         }
       },
       "block_order": [
@@ -150,7 +165,9 @@
         "innovation_block_Dkjbrc",
         "innovation_block_TJcnNH",
         "innovation_block_AbLjqT",
-        "innovation_block_CyJ9UM"
+        "innovation_block_CyJ9UM",
+        "innovation_block_rpPbm4",
+        "innovation_block_tVVUdc"
       ],
       "settings": {
         "padding_top": 44,
