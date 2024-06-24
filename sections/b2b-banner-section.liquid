@@ -13,21 +13,16 @@
 {% endstyle %}
 
 <section id="portal-section" class="section-{{ section.id }}-padding">
-<div class="portal-wrapper --{{ section.settings.desktop_content_position }} {{ section.settings.color_scheme }}">
-       {% for block in section.blocks %}
-         {% if block.type == 'image' %}
-           <div class="image-block">
-             <a>
-             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
-             </a>
-           </div>
-         {% endif %}
-          <h2 class="heading {{ block.settings.heading_size }}">
-                {{ block.settings.heading }}
-          </h2>
-       {% endfor %}
+  
+<div class="portal-wrapper --{{ section.settings.desktop_content_position }} {{ section.settings.color_scheme }}" style="background-image: url({{ section.settings.banner_image | image_url }}); padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+<div class="portal-heading" style="text-align: {{ section.settings.text_align }};">
+    <{{ section.settings.heading_size }}>{{ section.settings.heading }}</{{ section.settings.heading_size }}>
 </div>
+</div>
+
 </section>
+
+
 
 
 {% schema %}
@@ -125,7 +120,7 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "image",
+          "id": "banner_image",
           "label": "Upload Image"
         },
         {
