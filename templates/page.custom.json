@@ -16,9 +16,31 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "b2b_banner_section_JYT7x3": {
+      "type": "b2b-banner-section",
+      "blocks": {
+        "image_3khcck": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nike-just-do-it.webp",
+            "alt_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3khcck"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "desktop_content_position": "center",
+        "color_scheme": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "b2b_banner_section_JYT7x3"
   ]
 }
