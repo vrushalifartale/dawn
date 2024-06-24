@@ -66,7 +66,7 @@
         {% if block.type == 'video' %}
           <div class="video-block">
             <video controls>
-              <source src="{{ block.settings.video_url }}" type="video/mp4">
+              "{{ block.settings.video }}"
               Your browser does not support the video tag.
             </video>
           </div>
@@ -185,10 +185,9 @@
       "name": "Video",
       "settings": [
         {
-          "type": "url",
-          "id": "video_url",
-          "label": "Video URL",
-          "default": "/collections/all"
+          "type": "video",
+          "id": "video",
+          "label": "Upload your video here"
         }
       ]
     }
@@ -212,12 +211,6 @@
             "alt_text": "Sample Image"
           }
         },
-        {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=rppKgzoAkQc"
-          }
-        }
       ]
     }
   ]
