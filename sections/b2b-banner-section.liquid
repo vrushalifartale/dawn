@@ -12,9 +12,40 @@
   } 
 {% endstyle %}
 
-<section id="video-section" class="section-{{ section.id }}-padding">
-
-  
+<section id="portal-section" class="section-{{ section.id }}-padding">
+<div class="blocks-wrapper --{{ section.settings.desktop_content_position }}">
+       {% for block in section.blocks %}
+         {% if block.type == 'image' %}
+           <div class="image-block">
+             <a href="{{ block.settings.image_link | escape }}">
+             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
+             </a>
+           </div>
+         {% endif %}
+           <p class="mainbanner__caption {{ block.settings.text_style }}--{{ block.settings.text_size }} ">
+                {{ block.settings.caption }}
+           </p>
+          <h2 class="heading {{ block.settings.heading_size }}">
+                {{ block.settings.heading }}
+          </h2>
+          <div class="description">
+                {{ block.settings.description }}
+          </div>
+          <div class="mainbanner__button">
+                {%- if block.settings.button_label != blank -%}
+                  <a
+                    {% if block.settings.button_link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link }}" class="button--black {{ block.settings.button_style }}"
+                  
+                    {% endif %}>
+                    {{ block.settings.button_label }}
+                  </a>
+                {%- endif -%}
+          </div>
+       {% endfor %}
+</div>
 </section>
 
 
