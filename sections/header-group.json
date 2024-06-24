@@ -52,6 +52,7 @@
         "heading_r3Racn",
         "button_Ccp6Rm"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "color_scheme": "scheme-2",
