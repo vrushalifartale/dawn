@@ -39,9 +39,12 @@
   justify-content: center;
 }
 
-.innovation-summary .h3{
-  max-width: 640px;
-}
+.innovation-title {
+  max-width: 200px; /* Adjust the max-width as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}  
   
 .logo {
   margin-right: 8px; /* Adjust the space between the logo and the text */
@@ -82,7 +85,7 @@ details:not([open]) .plus-ico {
         <details>
           <summary class="innovation-summary">
             {{ block.settings.logo | image_url: width:40, height:40 | image_tag: class: 'logo' }}
-            <h3>{{ block.settings.text_title }}</h3>
+            <h3 class="innovation-title">{{ block.settings.text_title }}</h3>
             <span class="plus-ico">{% render 'plus-icon' %}</span>
             <span class="minus-ico">{% render 'minus-icon' %}</span>
           </summary>
