@@ -48,14 +48,16 @@
 {% endstyle %}
 
 <section id="video-section" class="section-{{ section.id }}-padding">
+  {% for block in section.blocks %}
   <div class="video-wrapper section-{{ section.id }} {{ section.settings.desktop_content_position }}">
     <div class="video-container">
-      {% for block in section.blocks %}
         {% if block.type == 'heading' %}
           <h2 class="heading {{ block.settings.heading_size }}">
             {{ block.settings.heading }}
           </h2>
         {% endif %}
+        </div>
+        <div class="">
         {% if block.type == 'image' %}
           <div class="image-block">
             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
@@ -68,10 +70,10 @@
               Your browser does not support the video tag.
             </video>
           </div>
-        {% endif %}
-      {% endfor %}
+        {% endif %}  
     </div>
   </div>
+  {% endfor %}
 </section>
 
 {% schema %}
