@@ -39,18 +39,14 @@
   z-index: 1;
 }
 
-.heading-white:{
-   color: white; 
-}
-
 {% endstyle %}
 
 <section id="portal-section" class="section-{{ section.id }}-padding">
   
 <div class="portal-wrapper --{{ section.settings.desktop_content_position }} {{ section.settings.color_scheme }}" style="background-image: url({{ section.settings.banner_image | image_url }}); padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
-<div class="banner-text-wrapper" style="text-align: {{ section.settings.text_align }};">
-    <{{ section.settings.heading_size }} class="heading-white">{{ section.settings.banner_heading }}</{{ section.settings.heading_size }}>
-  </div>
+<div class="portal-heading" style="text-align: {{ section.settings.text_align }};">
+    <{{ section.settings.heading_size }}>{{ section.settings.heading }}</{{ section.settings.heading_size }}>
+</div>
 </div>
 
 </section>
