@@ -85,7 +85,7 @@ details:not([open]) .plus-ico {
         <details>
           <summary class="innovation-summary">
             {{ block.settings.logo | image_url: width:40, height:40 | image_tag: class: 'logo' }}
-            <h3 class="innovation-title">{{ block.settings.text_title }}</h3>
+            <h2 class="innovation-title">{{ block.settings.text_title }}</h2>
             <span class="plus-ico">{% render 'plus-icon' %}</span>
             <span class="minus-ico">{% render 'minus-icon' %}</span>
           </summary>
