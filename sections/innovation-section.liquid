@@ -86,11 +86,10 @@ details:not([open]) .plus-ico {
           <summary class="innovation-summary">
             {% if block.settings.logo != blank %}
             {{ block.settings.logo | image_url: width:40, height:40 | image_tag: class: 'logo' }}
-            {% endif %}
             <h2 class="innovation-title">{{ block.settings.text_title }}</h2>
             <span class="plus-ico">{% render 'plus-icon' %}</span>
             <span class="minus-ico">{% render 'minus-icon' %}</span>
-            
+            {% endif %}
           </summary>
           <div class="innovation-content">
             {{ block.settings.text_content }}
