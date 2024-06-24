@@ -59,6 +59,11 @@
     "name": "B2B portal",
     "settings": [
       {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Upload Image"
+      },
+      {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -123,14 +128,7 @@
         }
       ],
       "default": "center"
-    }
-    ],
-    "blocks": [
-      {
-      "type": "heading",
-      "name": "Heading",
-      "limit": 3,
-      "settings": [
+    },  
         {
           "type": "inline_richtext",
           "id": "heading",
@@ -160,26 +158,8 @@
           ],
           "default": "h1",
           "label": "Heading size"
-        }
-      ]
-    },
-      {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "banner_image",
-          "label": "Upload Image"
         },
-        {
-          "type": "text",
-          "id": "alt_text",
-          "label": "Alt Text"
-        }
-      ]
-    },     
-    ],
+      ],
    "presets": [
      {
        "name": "B2B portal"
