@@ -17,7 +17,7 @@
        {% for block in section.blocks %}
          {% if block.type == 'image' %}
            <div class="image-block">
-             <a href="{{ block.settings.image_link | escape }}">
+             <a>
              <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
              </a>
            </div>
