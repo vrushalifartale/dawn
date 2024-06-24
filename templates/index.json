@@ -64,6 +64,34 @@
         "color_scheme": ""
       }
     },
+    "section_video_7kiDGA": {
+      "type": "section-video",
+      "blocks": {
+        "heading_M9BHFq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Innovation that created magical comfort<\/strong>",
+            "heading_size": "hxl"
+          }
+        },
+        "video_9dJK8K": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/62714af36e744f7ab5905dfe3c1ed7c8.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "heading_M9BHFq",
+        "video_9dJK8K"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "desktop_content_position": "center",
+        "color_scheme": ""
+      }
+    },
     "innovation_section_jdnTpx": {
       "type": "innovation-section",
       "blocks": {
@@ -381,38 +409,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "section_video_7kiDGA": {
-      "type": "section-video",
-      "blocks": {
-        "heading_M9BHFq": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Innovation that created magical comfort<\/strong>",
-            "heading_size": "hxl"
-          }
-        },
-        "video_9dJK8K": {
-          "type": "video",
-          "settings": {
-            "video": "shopify:\/\/files\/videos\/62714af36e744f7ab5905dfe3c1ed7c8.mp4"
-          }
-        }
-      },
-      "block_order": [
-        "heading_M9BHFq",
-        "video_9dJK8K"
-      ],
-      "settings": {
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "desktop_content_position": "center",
-        "color_scheme": ""
-      }
     }
   },
   "order": [
     "hero_banner_section_d6MqVJ",
+    "section_video_7kiDGA",
     "innovation_section_jdnTpx",
     "image_banner",
     "rich_text",
@@ -420,7 +421,6 @@
     "collage",
     "video",
     "multicolumn",
-    "collection_list_NYqYfj",
-    "section_video_7kiDGA"
+    "collection_list_NYqYfj"
   ]
 }
