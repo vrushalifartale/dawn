@@ -31,15 +31,11 @@
             
               <div class="notification__button">
                 {%- if block.settings.button_label != blank -%}
-                  <a
-                    {% if block.settings.button_link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
+                  <a role="link" aria-disabled="true"
                       href="{{ block.settings.button_link }}"
                     {% endif %}>
                     {{ block.settings.button_label }}
                   </a>
-                {%- endif -%}
               </div>
         {% endfor %}
          
