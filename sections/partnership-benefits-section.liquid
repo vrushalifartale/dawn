@@ -16,35 +16,30 @@
  <div class="section-{{ section.id }}-padding">
    <div class="benefits-container color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
      <div class="benefits-wrapper --{{ section.settings.desktop_content_position }}">
-       {% for block in section.blocks %}
-         <h2 class="heading {{ block.settings.heading_size }}">
-                {{ block.settings.heading }}
+         {% if section.settings.heading != blank %}
+         <h2 class="heading {{ section.settings.heading_size }}">
+                {{ section.settings.heading }}
           </h2>
-         {% if block.type == 'image' %}
-           <div class="image-block">
-             
-           </div>
-         {% endif %}
-           <p class="benefits__caption {{ block.settings.text_style }}--{{ block.settings.text_size }}">
-                {{ block.settings.caption }}
-           </p>   
-          <div class="description">
-                {{ block.settings.description }}
-          </div>
-          <div class="mainbanner__button">
-                {%- if block.settings.button_label != blank -%}
-                  <a
-                    {% if block.settings.button_link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.button_link }}" class="button--black {{ block.settings.button_style }}"
-                  
-                    {% endif %}>
-                    {{ block.settings.button_label }}
-                  </a>
-                {%- endif -%}
-          </div>
-       {% endfor %}
+          {% endif %}
+         <hr>
+         <ul class="features">
+           {%  for block in section.blocks %}
+           <li>
+            {% if block.settings.logo_with_text %} 
+            {{ block.settings.logo_with_text | image_url: width:80, height:80 | image_tag: class: 'logo' }}
+             {% endif %}
+             {% if block.settings.logo_with_text %}
+             <h4>{{ block.settings.logo_with_text }}</h4>
+             {% endif %}
+           </li>
+             {% endfor %}
+         </ul>
+         <hr>
+          <hr>
+         {% if section.settings.description != blank %}
+             {{ section.settings.description }}
+           {% endif %}
+          <hr>
      </div>
    </div>
  </div>
