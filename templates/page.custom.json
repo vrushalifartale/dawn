@@ -38,10 +38,45 @@
           "settings": {
             "logo_with_text": "shopify:\/\/shop_images\/Benefit-1_1.svg"
           }
+        },
+        "block_fDmA8m": {
+          "type": "block",
+          "settings": {
+            "logo_with_text": "shopify:\/\/shop_images\/Benefit-1_4.svg"
+          }
+        },
+        "block_VXG6Aq": {
+          "type": "block",
+          "settings": {
+            "logo_with_text": "shopify:\/\/shop_images\/Benefit-1_8.svg"
+          }
+        },
+        "block_iEU9DE": {
+          "type": "block",
+          "settings": {
+            "logo_with_text": "shopify:\/\/shop_images\/Benefit-1_5.svg"
+          }
+        },
+        "block_WBRtGX": {
+          "type": "block",
+          "settings": {
+            "logo_with_text": "shopify:\/\/shop_images\/Benefit-1_6.svg"
+          }
+        },
+        "block_mUgkMt": {
+          "type": "block",
+          "settings": {
+            "logo_with_text": "shopify:\/\/shop_images\/Benefit-1_7_ddcf8462-4660-44aa-bf8e-da6687342150.svg"
+          }
         }
       },
       "block_order": [
-        "block_HYPN7F"
+        "block_HYPN7F",
+        "block_fDmA8m",
+        "block_VXG6Aq",
+        "block_iEU9DE",
+        "block_WBRtGX",
+        "block_mUgkMt"
       ],
       "settings": {
         "padding_top": 0,
