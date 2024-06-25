@@ -60,6 +60,10 @@
 .benefits-description {
   max-width: 200px; /* Adjust as needed */
 }
+  
+.benefits-description {
+  max-width: 200px; /* Adjust as needed */
+}
 {%- endstyle -%}
 
 <section id="benefits-section">
@@ -80,7 +84,7 @@
          <hr>
           <hr>
          {% if section.settings.description != blank %}
-             {{ section.settings.description }}
+          <p class="benefits-description">{{ section.settings.description }}</p>
            {% endif %}
           <hr>
    </div>
