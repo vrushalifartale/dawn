@@ -44,11 +44,11 @@
         "block_HYPN7F"
       ],
       "settings": {
-        "padding_top": 40,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "desktop_content_position": "center",
         "color_scheme": "",
-        "description": "<p>Looking to elevate your stone projects? Join Stone Products Unlimited's B2B Partnership Program for dedicated support, exclusive pricing, free sample swatches, and more. Architects, Designers, Contractors & Dealers welcome. Sign up today!<\/p>",
+        "description": "<p>Looking to elevate your stone projects? Join Stone Products Unlimited's B2B Partnership Program for dedicated support, exclusive pricing, free sample swatches, and more. Architects, Designers, Contractors & Dealers welcome. <strong>Sign up today!<\/strong><\/p>",
         "heading": "Partnership Benefits",
         "heading_size": "h2"
       }
