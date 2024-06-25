@@ -1,3 +1,59 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section id="benefits-section">
+ <div class="section-{{ section.id }}-padding">
+   <div class="benefits-container color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+     <div class="benefits-wrapper --{{ section.settings.desktop_content_position }}">
+       {% for block in section.blocks %}
+         <h2 class="heading {{ block.settings.heading_size }}">
+                {{ block.settings.heading }}
+          </h2>
+         {% if block.type == 'image' %}
+           <div class="image-block">
+             
+           </div>
+         {% endif %}
+           <p class="benefits__caption {{ block.settings.text_style }}--{{ block.settings.text_size }}">
+                {{ block.settings.caption }}
+           </p>   
+          <div class="description">
+                {{ block.settings.description }}
+          </div>
+          <div class="mainbanner__button">
+                {%- if block.settings.button_label != blank -%}
+                  <a
+                    {% if block.settings.button_link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link }}" class="button--black {{ block.settings.button_style }}"
+                  
+                    {% endif %}>
+                    {{ block.settings.button_label }}
+                  </a>
+                {%- endif -%}
+          </div>
+       {% endfor %}
+     </div>
+   </div>
+ </div>
+</section>
+
+
+
+
+
 {% schema %}
   {
     "name": "Section name",
