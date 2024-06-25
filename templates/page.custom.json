@@ -36,8 +36,7 @@
         "block_HYPN7F": {
           "type": "block",
           "settings": {
-            "logo_with_text": "shopify:\/\/shop_images\/Benefit-1_1.svg",
-            "description": "<p>description<\/p>"
+            "logo_with_text": "shopify:\/\/shop_images\/Benefit-1_1.svg"
           }
         }
       },
@@ -49,6 +48,7 @@
         "padding_bottom": 52,
         "desktop_content_position": "center",
         "color_scheme": "",
+        "description": "<p>Looking to elevate your stone projects? Join Stone Products Unlimited's B2B Partnership Program for dedicated support, exclusive pricing, free sample swatches, and more. Architects, Designers, Contractors & Dealers welcome. Sign up today!<\/p>",
         "heading": "Partnership Benefits",
         "heading_size": "h2"
       }
