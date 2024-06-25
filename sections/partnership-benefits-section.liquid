@@ -16,14 +16,11 @@
  <div class="section-{{ section.id }}-padding">
    <div class="benefits-wrapper color-{{ section.settings.color_scheme }} position-{{ section.settings.desktop_content_position }} section-{{ section.id }}-padding">
          {% if section.settings.heading != blank %}
-         <h2 class="heading {{ section.settings.heading_size }}">
-                {{ section.settings.heading }}
-          </h2>
-          {% endif %}
+         <{{ section.settings.heading_size }} class="benefits-heading">{{ section.settings.heading }}</{{ section.settings.heading_size }}> {% endif %}
          <hr>
-         <ul class="features">
+         <ul class="benefits-list">
            {%  for block in section.blocks %}
-           <li>
+           <li class="benefits-item">
             {% if block.settings.logo_with_text %} 
             {{ block.settings.logo_with_text | image_url: width:80, height:80 | image_tag: class: 'logo' }}
              {% endif %}
