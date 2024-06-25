@@ -10,6 +10,37 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+.benefits-heading {
+  color: white; /* Adjust color as needed */
+  text-align: center; /* Or left/right based on section settings */
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap if there's not enough space */
+  justify-content: center; /* Adjust alignment as needed: center, flex-start, flex-end, space-between */
+  gap: 20px; /* Adjust gap between items */
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column; /* Stack the logo and description vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text inside the item */
+}
+
+.benefits-item .logo_with_text {
+  margin-bottom: 10px; /* Adjust space between logo and description */
+}
+
+.benefits-description {
+  max-width: 200px; /* Adjust as needed */
+}
 {%- endstyle -%}
 
 <section id="benefits-section">
