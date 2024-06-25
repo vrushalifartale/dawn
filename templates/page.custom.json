@@ -29,10 +29,34 @@
         "heading": "B2B Partnership Portal",
         "heading_size": "h1"
       }
+    },
+    "partnership_benefits_section_MHkLiR": {
+      "type": "partnership-benefits-section",
+      "blocks": {
+        "block_HYPN7F": {
+          "type": "block",
+          "settings": {
+            "logo_with_text": "shopify:\/\/shop_images\/Benefit-1_1.svg",
+            "description": "<p>description<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_HYPN7F"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "desktop_content_position": "center",
+        "color_scheme": "",
+        "heading": "Partnership Benefits",
+        "heading_size": "h2"
+      }
     }
   },
   "order": [
     "main",
-    "b2b_banner_section_JYT7x3"
+    "b2b_banner_section_JYT7x3",
+    "partnership_benefits_section_MHkLiR"
   ]
 }
