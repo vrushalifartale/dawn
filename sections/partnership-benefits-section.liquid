@@ -78,7 +78,7 @@ padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
 {%- endstyle -%}
 
 <section id="benefits-section section-{{ section.id }}-padding">
- <div class="partnership-benefit">
+ <div class="partnership-benefit" style="max-width: 1200px;">
         <div class="benefits-wrapper color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
          {% if section.settings.heading != blank %}
          <{{ section.settings.heading_size }} class="benefits-heading">{{ section.settings.heading }}</{{ section.settings.heading_size }}> {% endif %}
