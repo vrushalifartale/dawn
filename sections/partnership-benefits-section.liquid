@@ -42,10 +42,6 @@
   gap: 20px;
 } */
   
-.partnership-benefit{
-  margin-left:auto;
-}
-
 .benefits-item .logo_with_text {
   flex: 0 0 calc(100% / 6 - 10px);
   margin: 0 5px;
@@ -78,8 +74,14 @@
 
 .benefits-description {
   max-width: 200px; /* Adjust as needed */
+} 
+ 
+  .partnership-benefit {
+  margin-left: auto;
+  margin-right: auto; /* This will center it horizontally if the parent container allows */
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
 }
-  
 {%- endstyle -%}
 
 <section id="benefits-section section-{{ section.id }}-padding">
