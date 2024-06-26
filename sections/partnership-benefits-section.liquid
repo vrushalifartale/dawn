@@ -65,12 +65,13 @@ height: 171px; */
 }
 {%- endstyle -%}
 
-<section id="benefits-section">
- <div class="section-{{ section.id }}-padding">
-   <div class="benefits-wrapper color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+<section id="benefits-section section-{{ section.id }}-padding">
+ <div class="partnership benefit">
+        <div class="benefits-wrapper color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
          {% if section.settings.heading != blank %}
          <{{ section.settings.heading_size }} class="benefits-heading">{{ section.settings.heading }}</{{ section.settings.heading_size }}> {% endif %}
-         <hr>
+         </div>
+         <div class= "benefits-block">  
          <ul class="benefits-list">
            {%  for block in section.blocks %}
            <li class="benefits-item">
@@ -80,14 +81,11 @@ height: 171px; */
            </li>
              {% endfor %}
          </ul>
-         <hr>
-          <hr>
+         </div>
          {% if section.settings.description != blank %}
-          <p class="benefits-description">{{ section.settings.description }}</p>
+         <p class="benefits-description">{{ section.settings.description }}</p>
            {% endif %}
-          <hr>
    </div>
- </div>
 </section>
 
 
