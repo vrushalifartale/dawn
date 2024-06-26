@@ -29,10 +29,10 @@ benefits-block {
   text-align: center; /* Center text inside the item */
   gap: 20px;
 } */
-
-  /* .benefits-item .logo_with_text {
-  margin-bottom: 10px; /* Adjust space between logo and description */
-  } */
+  
+  .partnership-benefit{
+    margin-left:auto;
+  }
 
   .benefits-item .logo_with_text {
     flex: 0 0 calc(100% / 6 - 10px);
@@ -62,7 +62,6 @@ benefits-block {
   height: 62px;
   gap: 30px;
   opacity: 0px;
-
 }
 
 .benefits-list {
@@ -90,7 +89,7 @@ height: 171px; */
 {%- endstyle -%}
 
 <section id="benefits-section section-{{ section.id }}-padding">
- <div class="partnership benefit">
+ <div class="partnership-benefit">
         <div class="benefits-wrapper color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
          {% if section.settings.heading != blank %}
          <{{ section.settings.heading_size }} class="benefits-heading">{{ section.settings.heading }}</{{ section.settings.heading_size }}> {% endif %}
