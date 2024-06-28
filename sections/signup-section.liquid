@@ -6,12 +6,20 @@
 }
 
 .signup-wrapper {
-  max-width: 600px; /* Max width for the form wrapper */
+  position: absolute;
+  width: 1200px;
+  height: 760px;
+  left: 120px;
+  top: 925px;
+  width: 1200px; /* Max width for the form wrapper */
   margin: 0 auto; /* Center the form wrapper */
   padding: 20px; /* Padding inside the form wrapper */
-  background-color: #fff; /* Background color of the form wrapper */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
+
+
+
+
 {% endstyle %}  
   
 <section id="signup-section" class="signup-section section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
@@ -19,8 +27,6 @@
     <div id="form-container"></div> <!-- Container for the form -->
   </div>
 </section>
-
-
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 <script>
