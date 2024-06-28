@@ -87,11 +87,17 @@
         "heading": "Partnership Benefits",
         "heading_size": "h2"
       }
+    },
+    "signup_section_cUz7f4": {
+      "type": "signup-section",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "b2b_banner_section_JYT7x3",
-    "partnership_benefits_section_MHkLiR"
+    "partnership_benefits_section_MHkLiR",
+    "signup_section_cUz7f4"
   ]
 }
