@@ -44,7 +44,6 @@
   background: rgba(0, 0, 0, 0.5); /* Adjust overlay color and opacity */
   z-index: 1;
 }
-
 {% endstyle %}
 
 <div class="portal-wrapper {{ section.settings.desktop_content_position }} {{ section.settings.color_scheme }}" style="background-image: url({{ section.settings.banner_image | image_url }}); padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
@@ -52,10 +51,6 @@
     <{{ section.settings.heading_size }} style="color: white;" class="portal-heading-text">{{ section.settings.heading }}</{{ section.settings.heading_size }}>
   </div>
 </div>
-
-
-
-
 
 {% schema %}
   {
