@@ -23,7 +23,7 @@
         "banner_image": "shopify:\/\/shop_images\/Hero_Banner_1.png",
         "padding_top": 0,
         "padding_bottom": 28,
-        "desktop_content_position": "center",
+        "desktop_content_position": "left",
         "color_scheme": "",
         "text_align": "left",
         "heading": "B2B Partnership Portal",
@@ -91,6 +91,8 @@
     "signup_section_cUz7f4": {
       "type": "signup-section",
       "settings": {
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     }
   },
