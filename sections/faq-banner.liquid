@@ -1,6 +1,131 @@
+{% style %}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  } 
+ {% endstyle %}
+
+ <div class="faq-wrapper {{ section.settings.desktop_content_position }} {{ section.settings.color_scheme }}" style="background-image: url({{ section.settings.banner_image | image_url }}); padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="faq-heading" style="text-align: {{ section.settings.text_align }};">
+    <{{ section.settings.heading_size }} style="color: white;" class="faq-heading-text">{{ section.settings.heading }}</{{ section.settings.heading_size }}>
+  </div>
+</div> 
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Faq banner",
+    "settings": [
+      {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Upload Image"
+      },
+      {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 52
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Position"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "All colors",
+      "default": "scheme-1"
+    },
+      {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+        "label": "Text Alignment"
+      
+    },
+      {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "default",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Medium"
+            },
+            {
+              "value": "h1",
+              "label": "Large"
+            },
+            {
+              "value": "h0",
+              "label": "Extralarge"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        },   
+    ],
+    "presets": [
+      {
+        "name": "Faq"
+      }
+    ]
   }
 {% endschema %}
