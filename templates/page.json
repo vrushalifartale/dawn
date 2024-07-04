@@ -15,9 +15,23 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "faq_banner_KLfFeX": {
+      "type": "faq-banner",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/Hero_Banner_3.png",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "desktop_content_position": "center",
+        "color_scheme": "",
+        "text_align": "center",
+        "heading": "",
+        "heading_size": "h1"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "faq_banner_KLfFeX"
   ]
 }
