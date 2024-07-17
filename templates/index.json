@@ -60,6 +60,7 @@
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0,
+        "overlay_opacity": 50,
         "desktop_content_position": "center",
         "color_scheme": ""
       }
@@ -434,6 +435,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "input_LGm9mV": {
+      "type": "input",
+      "settings": {
+        "show_announcement": true
+      }
     }
   },
   "order": [
@@ -446,6 +453,7 @@
     "collage",
     "video",
     "multicolumn",
-    "collection_list_NYqYfj"
+    "collection_list_NYqYfj",
+    "input_LGm9mV"
   ]
 }
