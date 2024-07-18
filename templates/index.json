@@ -439,7 +439,25 @@
     "input_LGm9mV": {
       "type": "input",
       "settings": {
-        "show_announcement": true
+        "show_announcement": true,
+        "products_per_page": 20,
+        "logo_aligment": "left",
+        "font_size": 16,
+        "vertical_alignment": "middle",
+        "sizes": "m",
+        "footer_linklist_title": "Quick links",
+        "home_welcome_message": "Welcome to my shop!",
+        "article": "",
+        "blog": "",
+        "collection": "",
+        "collection_list": [
+
+        ],
+        "body_text": "#000000",
+        "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1) 100%)",
+        "heading_font": "helvetica_n4",
+        "video_embed": "",
+        "image_with_text_image": "shopify:\/\/shop_images\/Hero_Banner_3.png"
       }
     }
   },
