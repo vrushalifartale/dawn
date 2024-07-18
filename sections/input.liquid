@@ -171,7 +171,13 @@
           "id": "menu",
           "label": "Menu"
         },
-        
+        {
+          "type": "liquid",
+          "id": "battery_message",
+          "label": "Battery message",
+          "default": "{% if product.tags contains 'battery' %}This product can only be shipped by ground.{% else %}This product can be shipped by ground or air.{% endif %}"
+        },
+
 
 
 
