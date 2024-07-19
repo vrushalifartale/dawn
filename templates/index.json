@@ -476,8 +476,10 @@
     "cronix_banner_iMW9kM": {
       "type": "cronix-banner",
       "settings": {
-        "heading": "<h1>Heading<\/h1>",
+        "heading": "<h1>Full-Service eCommerce & Digital Agency <\/h1>",
         "caption": "hjjj",
+        "desktop_content_position": "center",
+        "text_align": "centered",
         "button": "hjjj",
         "button_link": "",
         "button_style": "button--primary"
