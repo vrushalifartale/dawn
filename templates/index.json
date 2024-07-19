@@ -476,7 +476,11 @@
     "cronix_banner_iMW9kM": {
       "type": "cronix-banner",
       "settings": {
-        "heading": "<h2>Heading<\/h2>"
+        "heading": "<h1>Heading<\/h1>",
+        "caption": "hjjj",
+        "button": "hjjj",
+        "button_link": "",
+        "button_style": "button--primary"
       }
     }
   },
