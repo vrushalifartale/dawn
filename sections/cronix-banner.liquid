@@ -13,10 +13,13 @@
 
 
 <section class="cronix-banner"> 
-
+<div class="video-block">
+              {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: true }} 
+    </div>
 <div class="heading" style="max-width:1000px;">{{ section.settings.heading }}</div>
 <div class="caption"> {{ section.settings.caption }} </div>
 <p><a href="{{ section.settings.button_link }}" class="button--black {{ section.settings.button_style }}">{{ section.settings.button }}</a></p>
+
 </section>
 
 
@@ -99,6 +102,11 @@
                     }
                   ],
           "default": "button--secondary"
+        },
+       {
+          "type": "video",
+          "id": "video",
+          "label": "Upload your video here"
         }
       
     ],
