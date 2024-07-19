@@ -1,5 +1,5 @@
 <section> 
-  <div class="cronix-banner" style="text-align: {{ section.settings.text_align }};">
+  <div class="cronix-banner" style="{{ section.settings.desktop_content_position }};">
 <div class="banner" style="max-width:700px;" > {{ section.settings.heading }} </div>
 <div class="caption"> {{ section.settings.caption }} </div>
 <a href="{{ section.settings.button_link }}" class="button--black {{ section.settings.button_style }}">{{ section.settings.button }}</a>
@@ -23,6 +23,26 @@
         "id": "caption",
         "label":"Caption",
         "default":"hjjj"
+      },
+      {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+       ],
+       "default": "center",
+       "label": "Position"
       },
       {
         "type": "radio",
