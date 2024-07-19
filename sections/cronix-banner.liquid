@@ -2,7 +2,7 @@
   <div class="cronix-banner">
 <div class="banner"> {{ section.settings.heading }} </div>
 <div class="caption"> {{ section.settings.caption }} </div>
-<a href="{{ section.settings.button_link }}">{{ section.settings.button }}</a>
+<a href="{{ section.settings.button_link }}" class="{{ section.settings.button_style }}">{{ section.settings.button }}</a>
   </div>
   
 </section>
@@ -34,7 +34,23 @@
         "type": "url",
         "id": "button_link",
         "label": "Link" 
-      }
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button style",
+        "options": [
+                    {
+                      "value": "button--primary",
+                      "label": "Primary"
+                    },
+                    {
+                      "value": "button--secondary",
+                      "label": "Secondary"
+                    }
+                  ],
+          "default": "button--secondary"
+        }
       
     ],
    "presets": [
