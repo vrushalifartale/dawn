@@ -482,7 +482,8 @@
         "text_align": "centered",
         "button": "hjjj",
         "button_link": "",
-        "button_style": "button--primary"
+        "button_style": "button--primary",
+        "video": "shopify:\/\/files\/videos\/cronix-bg.mp4"
       }
     }
   },
