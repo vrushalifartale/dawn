@@ -476,7 +476,7 @@
     "cronix_banner_iMW9kM": {
       "type": "cronix-banner",
       "settings": {
-        "heading": "<h1>Heading<\/h1>"
+        "heading": "<h2>Heading<\/h2>"
       }
     }
   },
