@@ -1,5 +1,5 @@
 <section> 
-<div class="banner" {{ section.settings.heading }}> </div>
+<div class="banner"  > {{ section.settings.heading }} </div>
 </section>
 
 
@@ -8,10 +8,16 @@
     "name": "Cronix banner",
     "settings": [
       {
-        "type": "richtext",
+        "type": "inline_richtext",
         "id": "heading",
         "label":"Heading",
-        "default":"<p>ghhhh</p>"
+        "default":"ghhhh"
+      },
+      {
+        "type": "text",
+        "id": "caption",
+        "label":"Caption",
+        "default":"hjjj"
       },
       
       
