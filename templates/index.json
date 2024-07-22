@@ -482,6 +482,7 @@
         "text_align": "centered",
         "button": "hjjj",
         "button_link": "",
+        "button_color": "#51fa17",
         "button_style": "button--primary",
         "video": "shopify:\/\/files\/videos\/cronix-bg.mp4"
       }
