@@ -40,20 +40,20 @@
   
 {% endstyle %}
 
-
-<section class="cronix-banner">   
-<div class="video-block">
-              {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: true }} 
+ 
+<div class="card">
+  <img src="/" alt="Avatar" style="width:100%"  alt="image" width="100" height="100">
+              {{ section.settings.image | image_tag: autoplay: true, loop: true, muted: true, controls: true }} 
 </div> 
 <div class="heading" style="max-width:1000px;">{{ section.settings.heading }}</div>
 <div class="caption"> {{ section.settings.caption }} </div>
 <p><a href="{{ section.settings.button_link }}" style="border:black;" class="button-- {{ section.settings.button_color }} {{ section.settings.button_style }}">{{ section.settings.button }}</a></p>
-</section>
 
 
 {% schema %}
   {
     "name": "Cronix banner",
+    "class": "cronix-banner",
     "settings": [
       {
         "type": "header",
@@ -69,9 +69,9 @@
         "content": "Add info"
       },
       {
-          "type": "video",
-          "id": "video",
-          "label": "Upload your video here"
+          "type": "image_picker",
+          "id": "image",
+          "label": "Upload your image here"
       },
       {
         "type": "richtext",
