@@ -475,7 +475,20 @@
     },
     "cronix_banner_iMW9kM": {
       "type": "cronix-banner",
+      "blocks": {
+        "button_7iHck3": {
+          "type": "button",
+          "settings": {
+            "title": "test",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_7iHck3"
+      ],
       "settings": {
+        "show_section": false,
         "heading": "<h1><strong>Full-Service eCommerce & Digital Agency<\/strong> <\/h1>",
         "caption": "<strong>Creating Captivating User Experiences With Custom-Built eCommerce Websites and Apps.<\/strong>",
         "desktop_content_position": "center",
@@ -483,8 +496,7 @@
         "button": "hjjj",
         "button_link": "",
         "button_color": "#51fa17",
-        "button_style": "button--primary",
-        "video": "shopify:\/\/files\/videos\/cronix-bg.mp4"
+        "button_style": "button--primary"
       }
     }
   },
