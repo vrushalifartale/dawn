@@ -43,7 +43,7 @@
  
 <div class="card">
   <img src="/" alt="Avatar" style="width:100%"  alt="image" width="100" height="100">
-              {{ section.settings.image | image_tag: autoplay: true, loop: true, muted: true, controls: true }} 
+              {{ section.settings.image | image_url }} 
 </div> 
 <div class="heading" style="max-width:1000px;">{{ section.settings.heading }}</div>
 <div class="caption"> {{ section.settings.caption }} </div>
