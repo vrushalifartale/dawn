@@ -21,6 +21,9 @@
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
   </div>
+  <div class="custom content"> 
+  {{ page.metafields.custom.faqss }}
+  </div>
 </div>
 
 {% schema %}
