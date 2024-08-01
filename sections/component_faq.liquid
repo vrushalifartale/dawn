@@ -1,6 +1,18 @@
+{{ section.faq.css | asset_url | stylesheet_tag }}
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Faqs",
+    "tag": "section",
+    "class": "section", 
+    "settings": [
+      
+    ],
+   "presets": [
+     {
+       "name": "FAQ"
+     }
+   ]
   }
 {% endschema %}
