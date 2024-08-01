@@ -1,9 +1,19 @@
 {{ section.faq.css | asset_url | stylesheet_tag }}
+
+
 {% style %}
+  
  .section-{{ section.id }}-padding {
   padding-top: ({{ section.settings.padding_top }}px * 0.75);
   padding-bottom: ({{ section.settings.padding_bottom }}px * 0.75);
-} 
+}
+
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}  
 {% endstyle %}
 
 {% schema %}
