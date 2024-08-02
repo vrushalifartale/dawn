@@ -475,6 +475,7 @@
     },
     "cronix_banner_iMW9kM": {
       "type": "cronix-banner",
+      "disabled": true,
       "settings": {
         "show_section": false,
         "heading": "<h1><strong>Full-Service eCommerce & Digital Agency<\/strong> <\/h1>",
