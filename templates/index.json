@@ -475,18 +475,6 @@
     },
     "cronix_banner_iMW9kM": {
       "type": "cronix-banner",
-      "blocks": {
-        "button_7iHck3": {
-          "type": "button",
-          "settings": {
-            "title": "test",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "button_7iHck3"
-      ],
       "settings": {
         "show_section": false,
         "heading": "<h1><strong>Full-Service eCommerce & Digital Agency<\/strong> <\/h1>",
@@ -497,6 +485,13 @@
         "button_link": "",
         "button_color": "#51fa17",
         "button_style": "button--primary"
+      }
+    },
+    "atom_herobanner_zzNdBz": {
+      "type": "atom_herobanner",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -512,6 +507,7 @@
     "video",
     "multicolumn",
     "collection_list_NYqYfj",
-    "cronix_banner_iMW9kM"
+    "cronix_banner_iMW9kM",
+    "atom_herobanner_zzNdBz"
   ]
 }
