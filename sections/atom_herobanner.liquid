@@ -2,8 +2,10 @@
   
 {% endstyle %}
 
-<section> 
-  
+<section id="custom-section">
+<div class="section-{{ section.id }}-padding">
+<div class="heading"></div>
+</div>  
 <section/>
 
 {% schema %}
@@ -32,6 +34,10 @@
     }
   ],
   "blocks": [
+     {
+      "type": "image_picker",
+      "name": "Image",
+      }, 
     {
       "type": "heading",
       "name": "Heading",
