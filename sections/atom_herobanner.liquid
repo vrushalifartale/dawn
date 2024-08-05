@@ -4,6 +4,8 @@
 
 <section id="custom-section">
 <div class="section-{{ section.id }}-padding">
+<div class="blocks-wrapper --{{ section.settings.desktop_content_position }}"> 
+  
 <div class="heading"></div>
 
 <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
@@ -32,7 +34,8 @@
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
               {%- endif -%}
-            </div>  
+            </div> 
+</div>
 </div>  
 <section/>
 
