@@ -5,6 +5,15 @@
 <section id="custom-section">
 <div class="section-{{ section.id }}-padding">
 <div class="blocks-wrapper --{{ section.settings.desktop_content_position }}"> 
+       {% for block in section.blocks %}
+         {% if block.type == 'image' %}
+           <div class="image-block">
+             <a href="{{ block.settings.image_link | escape }}">
+             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
+             </a>
+           </div>
+         {% endif %}
+     
   
 <div class="heading"></div>
 
@@ -35,7 +44,8 @@
                 </a>
               {%- endif -%}
             </div> 
-</div>
+  {% endfor %}
+</div>        
 </div>  
 <section/>
 
