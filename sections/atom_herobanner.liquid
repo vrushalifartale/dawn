@@ -13,16 +13,11 @@
              </a>
            </div>
          {% endif %}
-
-      {% if block.type == 'heading' %}        
-<div class="heading">{{ block.settings.heading }}</div>
-        {% endif %}
-
-       {% if block.type == 'description' %}        
-<div class="description">{{ block.settings.description }}</div>
-        {% endif %}
-         
-       {% if block.type == 'button' %}  
+           
+<h2 class="heading">{{ block.settings.heading }}</h2>
+             
+<div class="description">{{ block.settings.description }}</div>     
+          
 <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
               {{ block.shopify_attributes }} >
               {%- if block.settings.button_label_1 != blank -%}
@@ -50,7 +45,6 @@
                 </a>
               {%- endif -%}
             </div> 
-         {% endif %}
   {% endfor %}
 </div>        
 </div>  
