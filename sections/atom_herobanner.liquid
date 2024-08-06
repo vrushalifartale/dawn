@@ -15,12 +15,12 @@
     text-align: {{ section.settings.desktop_content_position }};
   }
 
-  .blocks-wrapper .image-block img {
+  .hero-wrapper .image-block img {
     max-width: 100%;
     aspect-ratio: 1/1
   }
 
-  .blocks-wrapper p {
+  .hero-wrapper .p {
     max-width: 700%;
     font-weight: 300;
     font-family: VC Garamond Condensed,ui-serif
@@ -29,7 +29,7 @@
 
 <section id="custom-section">
 <div class="section-{{ section.id }}-padding">
-<div class="blocks-wrapper --{{ section.settings.desktop_content_position }}"> 
+<div class="hero-wrapper --{{ section.settings.desktop_content_position }}"> 
        {% for block in section.blocks %}
          {% if block.type == 'image' %}
            <div class="image-block">
