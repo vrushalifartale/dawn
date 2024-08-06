@@ -505,10 +505,10 @@
             "heading": "<h1>Light as a cloud<\/h1>"
           }
         },
-        "caption_QzeDj4": {
-          "type": "caption",
+        "text_Bqcpcp": {
+          "type": "text",
           "settings": {
-            "caption": "All day comfort. All summer long."
+            "description": "<p>description<\/p>"
           }
         },
         "button_LBNkLR": {
@@ -526,7 +526,7 @@
       "block_order": [
         "image_picker_HyYhY4",
         "heading_gqb8GN",
-        "caption_QzeDj4",
+        "text_Bqcpcp",
         "button_LBNkLR"
       ],
       "settings": {
