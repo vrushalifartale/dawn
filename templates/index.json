@@ -491,6 +491,14 @@
     "atom_herobanner_zzNdBz": {
       "type": "atom_herobanner",
       "blocks": {
+        "image_bPpQfn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Model001-white-HeroAngle-4x5-3000px-v3_1.webp",
+            "alt_text": "",
+            "image_link": ""
+          }
+        },
         "heading_gqb8GN": {
           "type": "heading",
           "settings": {
@@ -513,21 +521,13 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "image_bPpQfn": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Model001-white-HeroAngle-4x5-3000px-v3_1.webp",
-            "alt_text": "",
-            "image_link": ""
-          }
         }
       },
       "block_order": [
+        "image_bPpQfn",
         "heading_gqb8GN",
         "text_Bqcpcp",
-        "button_LBNkLR",
-        "image_bPpQfn"
+        "button_LBNkLR"
       ],
       "settings": {
         "padding_top": 40,
