@@ -18,8 +18,8 @@
 <div class="heading">{{ block.settings.heading }}</div>
         {% endif %}
 
-       {% if block.type == 'caption' %}        
-<div class="caption"><p>{{ block.settings.caption }}</p>></div>
+       {% if block.type == 'description' %}        
+<div class="description"><p>{{ block.settings.description }}</p>></div>
         {% endif %}
          
        {% if block.type == 'button' %}  
@@ -116,14 +116,15 @@
       ]
     },
     {
-      "type": "caption",
-      "name": "Caption",
+      "type": "text",
+      "name": "Description",
+      "limit": 3,
       "settings": [
         {
-          "type": "text",
-          "id": "caption",
-          "default": "caption default",
-          "label": "Caption"
+          "type": "richtext",
+          "id": "description",
+          "default": "<p>description</p>",
+          "label": "Description"
         }
       ]
     },
