@@ -18,6 +18,10 @@
 <div class="heading">{{ block.settings.heading }}</div>
         {% endif %}
 
+       {% if block.type == 'caption' %}        
+<div class="caption">{{ block.settings.caption }}</div>
+        {% endif %}
+         
        {% if block.type == 'button' %}  
 <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
               {{ block.shopify_attributes }} >
