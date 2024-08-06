@@ -490,6 +490,45 @@
     },
     "atom_herobanner_zzNdBz": {
       "type": "atom_herobanner",
+      "blocks": {
+        "image_picker_HyYhY4": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Model001-white-HeroAngle-4x5-3000px-v3_1.webp",
+            "alt_text": "",
+            "image_link": "shopify:\/\/products\/short-sleeve-t-shirt"
+          }
+        },
+        "heading_gqb8GN": {
+          "type": "heading",
+          "settings": {
+            "heading": "default"
+          }
+        },
+        "caption_QzeDj4": {
+          "type": "caption",
+          "settings": {
+            "caption": "caption default"
+          }
+        },
+        "button_LBNkLR": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "button_label_1.default",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "button_label_2.default",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_HyYhY4",
+        "heading_gqb8GN",
+        "caption_QzeDj4",
+        "button_LBNkLR"
+      ],
       "settings": {
         "padding_top": 40,
         "padding_bottom": 52
