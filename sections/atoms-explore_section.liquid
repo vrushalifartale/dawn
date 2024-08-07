@@ -6,6 +6,22 @@
 <div class="section-{{ section.id }}-padding">
 <div class="explore-wrapper --{{ section.settings.desktop_content_position }}"> 
 <div class="title" style="{{ section.settings.text_align }}">{{ section.settings.title }}</div>
+ {% for block in section.blocks %}
+         {% if block.type == 'image' %}
+           <div class="image-block">
+             <a href="{{ block.settings.image_link | escape }}">
+             <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt_text | escape }}">
+             </a>
+           </div>
+         {% endif %}
+           
+        {% if block.type == 'heading' %}
+          <div class="heading">{{ block.settings.heading }}</div>
+        {% endif %}
+<div class="price">${{ block.settings.price }}</div>
+   
+<div class="description">{{ block.settings.description }}</div> 
+  {% endfor %}
 </div>
 </div>  
 </section>
