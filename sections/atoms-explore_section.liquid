@@ -15,13 +15,25 @@
     overflow:hidden;
     position:relative;
   }
- 
+
+.flex-container{
+  display:flex;  
+}    
+
+.image-block{
+  flex-basis:24%;
+  padding-left:1rem;
+  flex-shrink:0;
+  position:relative;
+}
+    
 {% endstyle %}
 
 <section id="custom-section">
 <div class="section-{{ section.id }}-padding">
 <div class="explore-wrapper --{{ section.settings.desktop_content_position }}"> 
 <div class="title" style="{{ section.settings.text_align }}">{{ section.settings.title }}</div>
+  <div class="flex-container">
  {% for block in section.blocks %}
          {% if block.type == 'image' %}
            <div class="image-block">
@@ -38,6 +50,7 @@
    
 <div class="description">{{ block.settings.description }}</div> 
   {% endfor %}
+  </div>
 </div>
 </div>  
 </section>
