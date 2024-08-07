@@ -536,8 +536,41 @@
     },
     "atoms_explore_section_my6DMV": {
       "type": "atoms-explore_section",
+      "blocks": {
+        "image_W7yeP8": {
+          "type": "image",
+          "settings": {
+            "alt_text": "",
+            "image_link": ""
+          }
+        },
+        "heading_t4TUBx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Model 001: Black & White"
+          }
+        },
+        "price_BdHQmp": {
+          "type": "price",
+          "settings": {
+            "price": 13
+          }
+        },
+        "description_CDnccB": {
+          "type": "description",
+          "settings": {
+            "description": "All-day comfort, supportive, durable"
+          }
+        }
+      },
+      "block_order": [
+        "image_W7yeP8",
+        "heading_t4TUBx",
+        "price_BdHQmp",
+        "description_CDnccB"
+      ],
       "settings": {
-        "title": "Explore Every Day",
+        "title": "<h2>Explore Every Day<\/h2>",
         "padding_top": 40,
         "padding_bottom": 52,
         "text_align": "left"
