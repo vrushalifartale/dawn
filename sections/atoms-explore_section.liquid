@@ -74,7 +74,17 @@
          "type": "image_picker",
          "id": "image",
          "label":"Upload image",
-           }
+           },
+          {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text"
+        },
+        {
+          "type": "url",
+          "id": "image_link",
+          "label": "Image Link URL"
+        }
         ],
       },
       {
@@ -88,7 +98,18 @@
           }
         ],
       },
-      
+      {
+      "type": "price",
+      "name": "Price",
+      "settings": [
+        {
+          "type": "number",
+          "id": "price",
+          "label": "Price",
+          "default": 0,
+        }
+        ]
+       },
       {
         "type":"description",
         "name":"description",
