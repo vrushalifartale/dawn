@@ -24,7 +24,7 @@
     aspect-ratio: 1/1;
   }
 
-  .heading h1 {
+  .heading {
     max-width: 700%;
     font-weight: 300;
     font-family: VC Garamond Condensed,ui-serif;
@@ -43,7 +43,9 @@
            </div>
          {% endif %}
            
-<p class="heading">{{ block.settings.heading }}</p>
+        {% if block.type == 'heading' %}
+          <p class="heading">{{ block.settings.heading }}</p>
+        {% endif %}
              
 <div class="description">{{ block.settings.description }}</div>     
           
