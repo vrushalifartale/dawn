@@ -18,7 +18,7 @@
         {% if block.type == 'heading' %}
           <div class="heading">{{ block.settings.heading }}</div>
         {% endif %}
-<div class="price">${{ block.settings.price }}</div>
+<div class="price">{{ block.settings.price }}</div>
    
 <div class="description">{{ block.settings.description }}</div> 
   {% endfor %}
