@@ -540,6 +540,7 @@
         "image_W7yeP8": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/lifestyle-001-black-white.webp",
             "alt_text": "",
             "image_link": ""
           }
