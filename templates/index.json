@@ -533,6 +533,15 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "atoms_explore_section_my6DMV": {
+      "type": "atoms-explore_section",
+      "settings": {
+        "title": "",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "text_align": "left"
+      }
     }
   },
   "order": [
@@ -548,6 +557,7 @@
     "multicolumn",
     "collection_list_NYqYfj",
     "cronix_banner_iMW9kM",
-    "atom_herobanner_zzNdBz"
+    "atom_herobanner_zzNdBz",
+    "atoms_explore_section_my6DMV"
   ]
 }
