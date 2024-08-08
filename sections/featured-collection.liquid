@@ -147,27 +147,30 @@
         {%- endfor -%}
       </ul>
 
-      <ul>
-          {% for option in product.options %}
-            {% if option == "Color" or option == "Colour" %}
-              {% assign index = forloop.index0 %}
-              {% assign colorlist = '' %}
-              {% assign color = '' %}
-              {% for variant in product.variants %}
-                {% capture color %}
-                  {{ variant.options[index] }}
-                {% endcapture %}
-                {% unless colorlist contains color %}
-                  <li><span class="color-{{color | handle }}"><a href="{{variant.id}}">{{color}}</a></span></li>
-                  {% capture tempList %}
-                    {{colorlist | append: color | append: ' '}}
-                  {% endcapture %}
-                  {% assign colorlist = tempList %}
-                {% endunless %}
-              {% endfor %}
-            {% endif %}
-          {% endfor %}
-     </ul>
+      {%- assign featured_image = product.featured_image  -%}
+{%- assign product_url = product.url -%}
+
+{%- if custom_option_name != blank and custom_option_value != blank -%}
+  {%- assign custom_option_name = custom_option_name | downcase | strip -%}
+  {%- assign custom_option_value = custom_option_value | downcase | strip -%}
+
+  {%- for product_option in product.options_with_values -%}
+    {%- assign option_name = product_option.name | handle -%}
+    {%- if option_name == custom_option_name -%}
+      {%- assign option_values = product_option.values | join: ',' | downcase | split: ',' -%}
+      {%- for option_value in option_values -%}
+        {%- if option_value == custom_option_value -%}
+          {%- assign custom_variant = product.variants[forloop.index0] -%}
+          {%- if custom_variant.featured_image -%}
+            {%- assign featured_image = custom_variant.featured_image -%}
+            {%- assign product_url = custom_variant.url -%}
+          {%- endif -%}
+          {% break %}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
       
       {%- if show_mobile_slider or show_desktop_slider -%}
         <div class="slider-buttons">
