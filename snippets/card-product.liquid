@@ -288,6 +288,11 @@
             {%- endif -%}
           </div>
            <span class="caption">{{ card_product.description | truncate: 100 }}</span>
+          {% for review in product.reviews limit:3 %}
+           <div>
+          {{ review.author }} said: {{ review.body }}
+          </div>
+         {% endfor %}
         </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
