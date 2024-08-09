@@ -324,7 +324,7 @@
         "text_TVBKmY": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<h3>Atoms shoes are versatile, durable and super support. They’re your perfect pair for hectic days, last-minute flights, and relaxing walks.<\/h3>",
             "text_style": "body"
           }
         },
