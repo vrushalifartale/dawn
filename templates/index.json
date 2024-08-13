@@ -361,7 +361,7 @@
     "star_section_PxKRaA": {
       "type": "star-section",
       "settings": {
-        "title": "<h1><strong>250,000+ customers love their Atoms<\/strong><\/h1>",
+        "title": "<p>250,000+ customers love their Atoms<\/p>",
         "padding_top": 20,
         "padding_bottom": 20,
         "desktop_content_position": "center"
