@@ -362,8 +362,8 @@
       "type": "star-section",
       "settings": {
         "title": "<h1><strong>250,000+ customers love their Atoms<\/strong><\/h1>",
-        "padding_top": 40,
-        "padding_bottom": 52,
+        "padding_top": 20,
+        "padding_bottom": 20,
         "desktop_content_position": "center"
       }
     }
