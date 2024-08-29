@@ -6,8 +6,6 @@
   line-height:1;  
 }
 
-
-
   
 {% endstyle %}
 
@@ -15,6 +13,9 @@
 <div class="section-{{ section.id }}-padding">
 <div class="explore-wrapper"> 
 <div class="richtext">{{ section.settings.title }}</div>
+ <div class="benefits-item">
+   {{ section.settings.logo | image_url: width:80, height:80 | image_tag: class: 'logo' }}
+ </div>
 </div>
 </div>  
 </section>
