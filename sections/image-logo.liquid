@@ -6,10 +6,21 @@
   line-height:1;  
 }
 
-.logo-item{
-  display:flex;
-  width:100%;
-  aspect-ratio:250 / 64; 
+.logo-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Centers the logos horizontally */
+    align-items: center; /* Centers the logos vertically if needed */
+    gap: 20px; /* Space between the logos */
+    padding: 20px 0; /* Optional padding for spacing around the logos */
+}
+
+.logo-item {
+    flex: 0 1 auto; /* Ensures the logo items do not stretch */
+}
+
+.logo {
+    max-height: 50px; /* Adjust logo height as needed */
+    width: auto; /* Maintains aspect ratio */
 }
   
 {% endstyle %}
@@ -19,6 +30,7 @@
 <div class="explore-wrapper"> 
 <div class="richtext">{{ section.settings.title }}</div>
   </div>
+ <div class= logo-container> 
 {%  for block in section.blocks %}
   <div class="logo-item">
       {% if block.settings.logo %} 
@@ -26,7 +38,7 @@
       {% endif %}
   </div>
   {% endfor %}
- 
+ </div>
 
 </div>  
 </section>
