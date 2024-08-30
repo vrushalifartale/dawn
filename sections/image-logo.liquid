@@ -21,8 +21,7 @@
     align-items: center; /* Centers the logos vertically if needed */
     gap: 20px; /* Space between the logos */
     padding: 20px 0; /* Optional padding for spacing around the logos */
-    column-gap: 5rem;
-  
+    column-gap: 5rem;  
 }
 
 .logo-item {
@@ -39,7 +38,7 @@
 <section id="custom-section">
 <div class="section-{{ section.id }}-padding">
 <div class="richtext-wrapper"> 
-<div class="logotext" style="text-align:center; opacity: 1; transform: none; font-family:serif;">{{ section.settings.title }}</div>
+<div class="logotext" style="text-align:center; opacity: 1; transform: none;">{{ section.settings.title }}</div>
   </div>
  <div class= logo-container> 
 {%  for block in section.blocks %}
