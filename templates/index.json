@@ -487,10 +487,24 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/logo-press-vogue.webp"
           }
+        },
+        "block_wJfz9H": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-press-esquire.webp"
+          }
+        },
+        "block_Ui9nVa": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-press-hony.webp"
+          }
         }
       },
       "block_order": [
-        "block_4zpr4X"
+        "block_4zpr4X",
+        "block_wJfz9H",
+        "block_Ui9nVa"
       ],
       "settings": {
         "title": "<h2>“I ordered ten pairs as Christmas presents. These were the best received gifts I’ve ever given. My agent went on to buy an additional seven pairs in every color.”<\/h2>",
