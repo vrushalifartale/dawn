@@ -215,7 +215,7 @@
         "collapsible_row_9RFD7P": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Hips- {{ product.metafields.custom.product_information.value.hips | metafield_text }}",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
@@ -224,7 +224,7 @@
         "collapsible_row_YLFGr7": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Weight- {{ product.metafields.custom.product_information.value.weight | metafield_text }}",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
