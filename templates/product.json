@@ -197,7 +197,7 @@
         "collapsible_row_hCKf8y": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row{{ product.metafields.custom.product_information.value.bust | metafield_text }}",
+            "heading": "Bust- {{ product.metafields.custom.product_information.value.bust | metafield_text }}",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
