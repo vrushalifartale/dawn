@@ -206,7 +206,7 @@
         "collapsible_row_CJmrYV": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Height- {{ product.metafields.custom.product_information.value.height | metafield_text }}",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
